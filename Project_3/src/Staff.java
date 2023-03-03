@@ -48,7 +48,7 @@ public abstract class Staff {
 // Employees //
 
 class Mechanics extends Staff {
-    static int id = 0;
+    private static int id = 0;
     public Mechanics() {
         super();
         name = "Mechanic_"+id;
@@ -88,7 +88,7 @@ class Mechanics extends Staff {
 
 
 class Interns extends Staff {
-    static int id = 0;
+    private static int id = 0;
     public Interns() {
         super();
         name = "Intern_"+id;
@@ -130,7 +130,7 @@ class Interns extends Staff {
 }
 
 class Salespeople extends Staff {
-    static int id = 0;
+    private static int id = 0;
     public Salespeople() {
         super();
         name = "Sales_"+id;
@@ -165,4 +165,19 @@ class Salespeople extends Staff {
         return 0.00;
 
     }
+}
+
+class Driver extends Staff {
+    private static int id = 0;
+    protected int winCount = 0;
+    public Driver() {
+        super();
+        name = "Driver"+id;
+        type = Enums.staffType.Driver;
+        wage = 20.80;
+        id++;
+    }
+
+    // Add injure method()
+
 }
