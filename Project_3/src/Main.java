@@ -8,7 +8,7 @@
 
 // Executing the Simulator class(Executes the program)
 public class Main {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         // Running the Program, Run it!!!
         Simulator sim = new Simulator();
         sim.run();

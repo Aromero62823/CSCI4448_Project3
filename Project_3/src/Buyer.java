@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Random;
 
 // Creating the buyer class that will have a new name, preferred typing of vehicle.
@@ -24,26 +23,27 @@ public class Buyer {
         } else {
             buyingChance = 1; // 10% chance to buys
         }
-
         id++;
     }
 
     // Given the inventory of the cars, and the preferred vehicle type, will return the inventory with new values
-    public int buyCar(ArrayList<Vehicle> inventory) {
+    public int buyCar() {
         Vehicle car = new Vehicle();
         int pos = 0;
         // The above arrow is to save the car that it lands on
 
         //Iterate through the vehicles and pick a car
-        for(int i = 0;i < inventory.size();i++) {
-            if(inventory.get(i).vType.equals(preferredType) && (!inventory.get(i).vCondition.equals(Enums.vehicleCondition.Broken)) && !inventory.get(i).sold) {
+        for(int i = 0;i < FNDC.inventory.size();i++) {
+            if(FNDC.inventory.get(i).vType.equals(preferredType)
+                    && (!FNDC.inventory.get(i).vCondition.equals(Enums.vehicleCondition.Broken))
+                        && Boolean.TRUE.equals(!FNDC.inventory.get(i).sold)) {
                 // save the car
-                car = inventory.get(i);
+                car = FNDC.inventory.get(i);
                 pos = i;
                 break;
             }
             // changed the buyers preference and restart the loop
-            if(i == inventory.size() - 1) {
+            if(i == FNDC.inventory.size() - 1) {
                 preferredType = Enums.vehicleType.values()[random.nextInt(3)];
                 i=0;
             }
