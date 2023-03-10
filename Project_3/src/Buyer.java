@@ -1,9 +1,11 @@
+import java.util.ArrayList;
 import java.util.Random;
 
 // Creating the buyer class that will have a new name, preferred typing of vehicle.
-public class Buyer {
+public class Buyer implements SysOutPrint{
     String name;
     Enums.vehicleType preferredType;
+    Enums.vehicleAddons preferredAddon;
     private static int id = 0;
     int buyingChance;
 
@@ -13,6 +15,7 @@ public class Buyer {
         // Increment values
         name = "Buyer_"+id;
         preferredType = Enums.vehicleType.values()[random.nextInt(3)];
+        preferredAddon = Enums.vehicleAddons.values() [random.nextInt(Enums.vehicleAddons.values().length)];
         buyingChance = random.nextInt(10);
 
         // Instantiating their buying chance
@@ -27,23 +30,23 @@ public class Buyer {
     }
 
     // Given the inventory of the cars, and the preferred vehicle type, will return the inventory with new values
-    public int buyCar() {
+    public int buyCar(ArrayList<Vehicle> vehicles) {
         Vehicle car = new Vehicle();
         int pos = 0;
         // The above arrow is to save the car that it lands on
 
         //Iterate through the vehicles and pick a car
-        for(int i = 0;i < FNDC.inventory.size();i++) {
-            if(FNDC.inventory.get(i).vType.equals(preferredType)
-                    && (!FNDC.inventory.get(i).vCondition.equals(Enums.vehicleCondition.Broken))
-                        && Boolean.TRUE.equals(!FNDC.inventory.get(i).sold)) {
+        for(int i = 0;i < vehicles.size();i++) {
+            if(vehicles.get(i).vType.equals(preferredType)
+                    && (!vehicles.get(i).vCondition.equals(Enums.vehicleCondition.Broken))
+                        && Boolean.TRUE.equals(!vehicles.get(i).sold)) {
                 // save the car
-                car = FNDC.inventory.get(i);
+                car = vehicles.get(i);
                 pos = i;
                 break;
             }
             // changed the buyers preference and restart the loop
-            if(i == FNDC.inventory.size() - 1) {
+            if(i == vehicles.size() - 1) {
                 preferredType = Enums.vehicleType.values()[random.nextInt(3)];
                 i=0;
             }
@@ -57,5 +60,35 @@ public class Buyer {
             buyingChance++;
         }
         return pos;
+    }
+
+    public boolean addonChance() {
+        boolean done = false;
+        int chance = random.nextInt(100);
+        switch (preferredAddon) {
+            case ExtendedWarranty -> {
+                if(chance < 25) {
+                    done=true;
+                }
+            }
+            case UnderCoating -> {
+                if(chance < 10) {
+                    done=true;
+                }
+            }
+            case RoadRescue -> {
+                if(chance < 5) {
+                    done=true;
+                }
+            }
+            case SatelliteRadio -> {
+                if(chance < 40) {
+                    done = true;
+                }
+            }
+        }
+
+        if(Boolean.TRUE.equals(done)) { print(name + " just added the " + preferredAddon + '!' );}
+        return done;
     }
 }

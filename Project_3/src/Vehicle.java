@@ -1,7 +1,7 @@
+import java.util.ArrayList;
 import java.util.Random;
-import static java.lang.System.*;
 // Vehicle class will be the parent that the other subclasses will be inheriting from this class.
-public class Vehicle {
+public class Vehicle implements SysOutPrint {
     // Random will be used for this
     Random random = new Random();
 
@@ -22,6 +22,11 @@ public class Vehicle {
     protected int salesBonus;
     protected int raceWinBonus;
 
+    // race eligibility
+    Boolean raceEligible;
+
+    // Added on Addons
+    Enums.vehicleAddons vAddon;
     // type of the vehicle
     Enums.vehicleType vType;
     // condition of the vehicle
@@ -41,73 +46,49 @@ public class Vehicle {
         sold = false;
     }
 
-    // When the interns clean a car, the car object is being called
-    void cleanCar(Enums.washTypes type, int chance, int index) {
-        boolean cleaned = false;
-        switch (type) {
-            case Chemical -> {
-                if(chance < 10 && (!vCondition.equals(Enums.vehicleCondition.Broken))) {
-                        vCondition = Enums.vehicleCondition.Broken;
-                        out.println("Oh no, "+ vehicleName + " is now broken.");
-                }
-                if(vCleanliness.equals(Enums.vehicleCleanliness.Dirty)) {
-                    if(chance < 80) {
-                        vCleanliness = Enums.vehicleCleanliness.Clean;
-                        cleaned = true;
-                    } else if(chance < 90) {
-                        vCleanliness = Enums.vehicleCleanliness.Sparkling;
-                        cleaned = true;
-                    }
-                } else if(vCleanliness.equals(Enums.vehicleCleanliness.Clean)) {
-                    if(chance < 10) {
-                        vCleanliness = Enums.vehicleCleanliness.Dirty;
-                    } else if(chance < 30) {
-                        vCleanliness = Enums.vehicleCleanliness.Sparkling;
-                        cleaned = true;
-                    }
-                }
-            }
-            case ElbowGrease -> {
-                if(chance < 10 && (!vCondition.equals(Enums.vehicleCondition.New))) {
-                        vCondition = Enums.vehicleCondition.New;
-                        out.println(vehicleName+ " is now New.");
-                }
-                if(vCleanliness.equals(Enums.vehicleCleanliness.Dirty)) {
-                    if(chance < 60) {
-                        vCleanliness = Enums.vehicleCleanliness.Clean;
-                        cleaned = true;
-                    } else if(chance < 66) {
-                        vCleanliness = Enums.vehicleCleanliness.Sparkling;
-                        cleaned = true;
-                    }
-                } else if(vCleanliness.equals(Enums.vehicleCleanliness.Clean)) {
-                    if(chance < 16) {
-                        vCleanliness = Enums.vehicleCleanliness.Dirty;
-                    } else if(chance < 31) {
-                        vCleanliness = Enums.vehicleCleanliness.Sparkling;
-                        cleaned = true;
-                    }
-                }
-            }
-            case Detailed -> {
-                if(vCleanliness.equals(Enums.vehicleCleanliness.Dirty)) {
-                    if(chance < 50) {
-                        vCleanliness = Enums.vehicleCleanliness.Clean;
-                        cleaned = true;
-                    } else if(chance < 70) {
-                        vCleanliness = Enums.vehicleCleanliness.Sparkling;
-                        cleaned = true;
-                    }
-                } else if(vCleanliness.equals(Enums.vehicleCleanliness.Clean)) {
-                    if(chance < 5) {
-                        vCleanliness = Enums.vehicleCleanliness.Dirty;
-                    } else if(chance < 45) {
-                        vCleanliness = Enums.vehicleCleanliness.Sparkling;
-                         cleaned = true;
-                    }
-                }
+    // getting the vehicles by the type
+    static ArrayList<Vehicle> getRacingTypes(ArrayList<Vehicle> vehicles, Enums.vehicleType t) {
+        ArrayList<Vehicle> racingVehicles = new ArrayList<>();
+        for(Vehicle i : vehicles) {
+            if(i.vType.equals(t) && !i.vCondition.equals(Enums.vehicleCondition.Broken) && racingVehicles.size()!=3) {
+                racingVehicles.add(i);
             }
         }
+        return racingVehicles;
+    }
+
+    // When the interns clean a car, the car object is being called
+     boolean cleanCar(int lowerBound, int upperBound, Enums.washTypes w) {
+        int chance = random.nextInt(100);
+        boolean cleaned = false;
+
+        if(vCleanliness.equals(Enums.vehicleCleanliness.Dirty)) {
+            if(chance<=upperBound) {
+                vCleanliness = Enums.vehicleCleanliness.values()[vCleanliness.ordinal()-2];
+                cleaned=true;
+            } else if(chance <= lowerBound) {
+                vCleanliness = Enums.vehicleCleanliness.values() [vCleanliness.ordinal() - 1];
+                cleaned=true;
+            }
+        } else {
+            if(chance<=lowerBound) {
+                print(vehicleName + " just went from " + vCleanliness + " to " + Enums.vehicleCleanliness.values() [vCleanliness.ordinal() + 1]);
+                vCleanliness = Enums.vehicleCleanliness.values() [vCleanliness.ordinal() + 1];
+                cleaned=true;
+            } else if(chance<= upperBound){
+                vCleanliness = Enums.vehicleCleanliness.values() [vCleanliness.ordinal() - 1];
+            }
+        }
+
+        int externalChance = random.nextInt(100);
+        if(w.equals(Enums.washTypes.Chemical) && externalChance <= 9) {
+            vCondition = Enums.vehicleCondition.Broken;
+            print("Oh no! " + vehicleName + " just broke!");
+        } else if(w.equals(Enums.washTypes.ElbowGrease) && externalChance <= 9) {
+            vCondition = Enums.vehicleCondition.New;
+            print("The " + vehicleName + " just became Like New!");
+        }
+        return cleaned;
     }
 
     Boolean fixVehicle() {
@@ -137,13 +118,24 @@ public class Vehicle {
 
     // When the vehicle loses
     public void vLost() {
-        out.println(vehicleName + " got damaged during the race!");
+        print(vehicleName + " got damaged during the race!");
         vCondition = Enums.vehicleCondition.Broken;
     }
     //When the vehicle wins
     public void vWin() {
-        out.println(vehicleName + " increased in price!");
+        print(vehicleName + " increased in price!");
         salesPrice = salesPrice + (salesPrice+0.1);
+    }
+
+    public void customerAddons(Buyer buyer) {
+        if(buyer.addonChance()) {
+            switch (buyer.preferredAddon) {
+                case ExtendedWarranty -> salesPrice=salesPrice + (salesPrice*0.2);
+                case UnderCoating -> salesPrice=salesPrice + (salesPrice*0.05);
+                case SatelliteRadio -> salesPrice=salesPrice + (salesPrice*0.05);
+                case RoadRescue -> salesPrice=salesPrice + (salesPrice*0.02);
+            }
+        }
     }
 }
 
@@ -168,13 +160,16 @@ class PerformanceCar extends Vehicle {
         repairBonus = 1200;
         salesBonus = 750;
         raceWinBonus = 2000;
-
+        raceEligible = true;
         // sales price is double the cost
         salesPrice = cost * 2;
         id++;
     }
 }
 
+/**
+ * Vehicle subclasses
+ */
 
 class Car extends Vehicle {
     private static final String[] carNames = {"Jeep", "Cruiser", "Corolla", "Nissan", "Rider"};
@@ -193,7 +188,7 @@ class Car extends Vehicle {
         washBonus = 500;
         repairBonus = 1000;
         salesBonus = 500;
-
+        raceEligible = false;
         // sales price is double the cost
         salesPrice = cost * 2;
         id++;
@@ -219,6 +214,7 @@ class Pickup extends Vehicle {
         repairBonus = 1500;
         salesBonus = 950;
         raceWinBonus = 3000;
+        raceEligible = false;
         // sales price is double the cost
         salesPrice = cost * 2;
         id++;
@@ -246,6 +242,7 @@ class ElectricCar extends Vehicle {
         washBonus = 700;
         repairBonus = 1250;
         salesBonus = 650;
+        raceEligible = false;
         // sales price is double the cost
         salesPrice = cost * 2;
         id++;
@@ -272,6 +269,7 @@ class Motorcycle extends Vehicle {
         repairBonus = 800;
         salesBonus = 750;
         raceWinBonus = 2500;
+        raceEligible = true;
         // sales price is double the cost
         salesPrice = cost * 2;
         id++;
@@ -296,6 +294,7 @@ class MonsterTruck extends Vehicle {
         repairBonus = 2000;
         salesBonus = 4000;
         raceWinBonus = 10000;
+        raceEligible=true;
         // sales price is double the cost
         salesPrice = cost * 2;
         id++;

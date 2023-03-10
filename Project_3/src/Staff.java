@@ -1,10 +1,9 @@
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.Random;
 
-import static java.lang.System.*;
-
 // Staff that is made up of 3 distinct group
-public abstract class Staff {
+public abstract class Staff implements SysOutPrint{
     protected static final DecimalFormat df = new DecimalFormat("0.00");
     Random random = new Random();
     //Employee Attributes:
@@ -29,9 +28,20 @@ public abstract class Staff {
         status = true;
     }
 
+    // Getting an array list of instances from the staff list
+    static ArrayList<Staff> getStaffByType(ArrayList<Staff> staffList, Enums.staffType s) {
+        ArrayList<Staff> subInstances = new ArrayList<>();
+        for(Staff i : staffList) {
+            if(i.type.equals(s)) {
+                subInstances.add(i);
+            }
+        }
+        return subInstances;
+    }
+
     // When a worker quits, sets their status to false
     void quit() {
-        out.printf("%s has quit the FNDC. They worked %d days and made $%s.\n", name, daysWorked, df.format(totalEarned));
+        print(name + "has quit the FNDC. They worked "+ daysWorked +  " days and made $" + df.format(totalEarned));
         status = false;
     }
 
@@ -61,32 +71,33 @@ class Mechanics extends Staff {
         status = true;
     }
 
-    public double fix() {
+    public double fix(ArrayList<Vehicle> vehicles) {
+        double repairBonusTotal = 0;
         // Random vehicle from vehicle arraylist
-        int randVehicle = random.nextInt(FNDC.inventory.size());
-        // Prior:
-        Enums.vehicleCondition before = FNDC.inventory.get(randVehicle).vCondition;
+        for(int i = 0;i < random.nextInt(1,3);i++) {
+            int randVehicle = random.nextInt(vehicles.size());
+            // Prior:
+            Enums.vehicleCondition before = vehicles.get(randVehicle).vCondition;
 
-        if(Boolean.TRUE.equals(FNDC.inventory.get(randVehicle).fixVehicle()))
-        {
-            out.println(name + " just fixed " + FNDC.inventory.get(randVehicle).vehicleName +
-                    " from " + before + " to " + FNDC.inventory.get(randVehicle).vCondition);
+            if (Boolean.TRUE.equals(vehicles.get(randVehicle).fixVehicle())) {
+                print(name + " just fixed " + vehicles.get(randVehicle).vehicleName +
+                        " from " + before + " to " + vehicles.get(randVehicle).vCondition);
 
-            out.println(name + " just got a bonus of $" + FNDC.inventory.get(randVehicle).repairBonus);
-            // Increment the bonus
-            totalEarned += FNDC.inventory.get(randVehicle).repairBonus;
-            // return the bonus
-            return FNDC.inventory.get(randVehicle).repairBonus;
-        } else {
-            out.println(name + " couldn't fix the " + FNDC.inventory.get(randVehicle).vehicleName);
+                print(name + " just got a bonus of $" + vehicles.get(randVehicle).repairBonus);
+                // Increment the bonus
+                totalEarned += vehicles.get(randVehicle).repairBonus;
+                repairBonusTotal += vehicles.get(randVehicle).repairBonus;
+            } else {
+                print(name + " couldn't fix the " + vehicles.get(randVehicle).vehicleName);
+            }
         }
-        return 0;
+        return repairBonusTotal;
     }
 
 }
 
 
-class Interns extends Staff implements Wash{
+class Interns extends Staff {
     private static int id = 0;
     protected final Enums.washTypes washType;
     public Interns() {
@@ -95,20 +106,90 @@ class Interns extends Staff implements Wash{
         type = Enums.staffType.Intern;
         wage = 11.50;
         // Assigned a washing method
-        washType = Enums.washTypes.values()[FNDC.random.nextInt(Enums.washTypes.values().length)];
+        washType = Enums.washTypes.values()[random.nextInt(Enums.washTypes.values().length)];
         id++;
-    }
-    // Removing by having the intern's status set to false
-    void remove() {
-        status = false;
     }
 
     // parameterizing the washing method
-    public void wash(int index){
+    public double wash(ArrayList<Vehicle> vehicles) {
+        int randVehicle = random.nextInt(vehicles.size());
+        Vehicle vehicle = vehicles.get(randVehicle);
+        double totalWashBonus = 0;
+        int lowerBound = 0;
+        int upperBound = 0;
 
-        washing(name, washType, index);
+        for(int i = 0;i < random.nextInt(1, 3);i++) {
+            print(name + " is washing using the " + washType + " method!");
+            if(!vehicle.vCleanliness.equals(Enums.vehicleCleanliness.Sparkling)) {
+                switch (washType) {
+                    case Chemical -> {
+                        if (vehicle.vCleanliness.equals(Enums.vehicleCleanliness.Dirty)) {
+                            lowerBound = 79;
+                            upperBound = 9;
+                        } else if (vehicle.vCleanliness.equals(Enums.vehicleCleanliness.Clean)) {
+                            lowerBound = 9;
+                            upperBound = 19;
+                        }
+                        if (vehicles.get(randVehicle).cleanCar(lowerBound, upperBound, washType)) {
+                            if (vehicles.get(randVehicle).vCleanliness.equals(Enums.vehicleCleanliness.Sparkling)) {
+                                print(name + " just got a bonus of $" + vehicle.washBonus + " for cleaning " + vehicle.vehicleName);
+                                totalEarned += vehicle.washBonus;
+                                totalWashBonus += vehicle.washBonus;
+                            }
+                            print(name + " washed " + vehicle.vehicleName + " from " + vehicle.vCleanliness +
+                                    " to " + vehicles.get(randVehicle).vCondition);
+                        } else {
+                            print(name + " couldn't wash the vehicle...");
+                        }
+                    }
+
+
+                    case ElbowGrease -> {
+                        if (vehicle.vCleanliness.equals(Enums.vehicleCleanliness.Dirty)) {
+                            lowerBound = 69;
+                            upperBound = 4;
+                        } else if (vehicle.vCleanliness.equals(Enums.vehicleCleanliness.Clean)) {
+                            lowerBound = 14;
+                            upperBound = 28;
+                        }
+                        if (vehicles.get(randVehicle).cleanCar(lowerBound, upperBound, washType)) {
+                            if (vehicles.get(randVehicle).vCleanliness.equals(Enums.vehicleCleanliness.Sparkling)) {
+                                print(name + " just got a bonus of $" + vehicle.washBonus + " for cleaning " + vehicle.vehicleName);
+                                totalEarned += vehicle.washBonus;
+                                totalWashBonus += vehicle.washBonus;
+                            }
+                            print(name + " washed " + vehicle.vehicleName + " from " + vehicle.vCleanliness +
+                                    " to " + vehicles.get(randVehicle).vCondition);
+                        } else {
+                            print(name + " couldn't wash the vehicle...");
+                        }
+                    }
+                    case Detailed -> {
+                        if (vehicle.vCleanliness.equals(Enums.vehicleCleanliness.Dirty)) {
+                            lowerBound = 59;
+                            upperBound = 19;
+                        } else if (vehicle.vCleanliness.equals(Enums.vehicleCleanliness.Clean)) {
+                            lowerBound = 4;
+                            upperBound = 39;
+                        }
+                        if (vehicles.get(randVehicle).cleanCar(lowerBound, upperBound, washType)) {
+                            if (vehicles.get(randVehicle).vCleanliness.equals(Enums.vehicleCleanliness.Sparkling)) {
+                                print(name + " just got a bonus of $" + vehicle.washBonus + " for cleaning " + vehicle.vehicleName);
+                                totalEarned += vehicle.washBonus;
+                                totalWashBonus += vehicle.washBonus;
+                            }
+                            print(name + " washed " + vehicle.vehicleName + " from " + vehicle.vCleanliness +
+                                    " to " + vehicles.get(randVehicle).vCondition);
+                        } else {
+                            print(name + " couldn't wash the vehicle...");
+                        }
+
+                    }
+                }
+            } else { print(vehicle.vehicleName + " is already Sparkling!"); }
+        }
+        return totalWashBonus;
     }
-
 }
 
 class Salespeople extends Staff {
@@ -129,22 +210,27 @@ class Salespeople extends Staff {
         status = true;
     }
 
-    public double sell(Buyer cust) {
+    public double sell(Buyer cust, ArrayList<Vehicle> vehicles) {
+        double salestotal = 0;
         // Iterate through the elements in the buyers array
         int chance = random.nextInt(10);
         // save the car
-        int carPos = cust.buyCar();
-        Vehicle soldveh = FNDC.inventory.get(carPos);
+        int carPos = cust.buyCar(vehicles);
+
+        Vehicle soldveh = vehicles.get(carPos);
+
         if(chance <= cust.buyingChance) {
-            out.println(name + " just sold the " + soldveh.vehicleName + " for $" + df.format(soldveh.salesPrice) + " to " + cust.name);
-            out.println(name + " got a bonus of $" + soldveh.salesBonus);
-            FNDC.inventory.get(carPos).sold = true;
+            print(name + " just sold the " + soldveh.vehicleName + " for $" + df.format(soldveh.salesPrice) + " to " + cust.name);
+            print(name + " got a bonus of $" + soldveh.salesBonus);
+            vehicles.get(carPos).customerAddons(cust);
+            vehicles.get(carPos).sold = true;
             totalEarned+=soldveh.salesBonus;
+            salestotal+=soldveh.salesPrice;
         } else {
-            out.println(cust.name + " couldn't decided not to buy the " + soldveh.vehicleName);
+            print(cust.name + " couldn't decided not to buy the " + soldveh.vehicleName);
         }
         // if the car wasn't sold
-        return 0.00;
+        return salestotal;
 
     }
 }
@@ -152,8 +238,6 @@ class Salespeople extends Staff {
 class Driver extends Staff {
     private static int id = 0;
     protected int winCount = 0;
-    // injured as a boolean
-    boolean injured = false;
     public Driver() {
         super();
         name = "Driver"+id;
@@ -167,24 +251,25 @@ class Driver extends Staff {
         int injureChance = random.nextInt(10);
 
         if(injureChance <= 3) {
-            out.println(name + " got injured!");
-            injured = true;
+            print(name + " got injured!");
+            status = false;
         }
     }
 
-    public void race( int carPosition, int position) {
-        out.println(name + " just finished in " + position + " place with the " + FNDC.inventory.get(carPosition).vehicleName);
+    public double race(int position, Vehicle vehicle) {
+        print(name + " just finished in " + position + " place with the " + vehicle.vehicleName);
         if(position > 14) {
-            FNDC.inventory.get(carPosition).vLost();
+            vehicle.vLost();
             lost();
         } else if(position < 4) {
-            out.println(name + " is a winner and got a bonus of $" + FNDC.inventory.get(carPosition).raceWinBonus + '!');
-            totalEarned+= FNDC.inventory.get(carPosition).raceWinBonus;
-            FNDC.operatingBudget+= FNDC.inventory.get(carPosition).raceWinBonus;
+            print(name + " is a winner and got a bonus of $" + vehicle.raceWinBonus + '!');
+            totalEarned+= vehicle.raceWinBonus;
             winCount++;
-            FNDC.inventory.get(carPosition).vWin();
-            FNDC.inventory.get(carPosition).vWinCount++;
+            vehicle.vWin();
+            vehicle.vWinCount++;
+            return vehicle.raceWinBonus;
         }
+        return 0;
     }
 
 }

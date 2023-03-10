@@ -1,30 +1,30 @@
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Random;
-import static java.lang.System.*;
 
 //FNDC Object that will run when object is created
-public class FNDC {
-    private static final DecimalFormat df = new DecimalFormat("0.00");
+public class FNDC implements SysOutPrint {
+    private final DecimalFormat df = new DecimalFormat("0.00");
     //Random instance
-    static final Random random = new Random();
+    final Random random = new Random();
 
     // The starting budget of half a million dollars
-    protected static double operatingBudget = 500000.00;
+    private double operatingBudget;
 
-    // There must be 3 of each type to begin
-    protected static final Mechanics[] mechanics = new Mechanics[3];
-    protected static final Interns[] ints = new Interns[3];
-    protected static final Salespeople[] salespeople = new Salespeople[3];
-    protected static final Driver[] drivers = new Driver[3];
-
-    // Every vehicle sold will be stored
-    protected static ArrayList<Vehicle> inventory = new ArrayList<>();
-    // Every vehicle bought will also be stored
-    protected static ArrayList<Vehicle> soldVehicles;
+    // store staff list and inventory with vehicles(also sold)
+    protected ArrayList<Staff> storeStaff;
+    protected ArrayList<Staff> firedStaff;
+    protected ArrayList<Vehicle> inventory;
+    protected ArrayList<Vehicle> soldVehicles;
 
     // FNDC constructor
-    protected FNDC() {
+    FNDC() {
+        storeStaff = new ArrayList<>();
+        firedStaff = new ArrayList<>();
+        inventory = new ArrayList<>();
+        soldVehicles = new ArrayList<>();
+
+        // Creating the objects and initializing instances
         for(int i = 0;i < 4;i++) {
             inventory.add(new Car());
             inventory.add(new Pickup());
@@ -36,151 +36,157 @@ public class FNDC {
         }
 
         for(int i = 0;i < 3;i++) {
-            mechanics[i] = new Mechanics();
-            salespeople[i] = new Salespeople();
-            ints[i] = new Interns();
-            drivers[i] = new Driver();
+            storeStaff.add(new Mechanics());
+            storeStaff.add(new Salespeople());
+            storeStaff.add(new Driver());
+            storeStaff.add(new Interns());
         }
 
-        // Set the sold vehicles
-        soldVehicles = new ArrayList<>();
+        operatingBudget=5000000.00;
     }
 
     //private methods for helping out public methods
-    private static void checkBalance() {
+    private void checkBalance() {
         // Checking the budget on opening day
-        if(operatingBudget <= 0)
+        if(operatingBudget < 0)
         {
-            out.println("Oh no! We are in debt! Running to the bank!, Added $250,000!");
+            print("Oh no! We are in debt! Running to the bank!, Added $250,000!");
             operatingBudget+= 250000;
         }
     }
-    // When the FNDC opens, call this method, everyday it will instantiate new objects
-    protected static void opening() {
-        out.println("Opening...");
-        checkBalance();
-        // Mechanics and salespeople, checking every array if there has been anyone that was fired
-        for(int i = 0;i < 3;i++)
-        {
-            //Checking for which mechanic quit so that I can promote an intern
-            if(!mechanics[i].status)
-            {
-                for(int j = 0;j < 3;j++)
-                {
-                    // if the interns status isn't fired, meaning that it is true
-                    if(ints[j].status)
-                    {
-                        mechanics[i] = new Mechanics(ints[j]);
-                        out.println(ints[j].name + " just got promoted to a Mechanic!");
-                        // set the intern to be removed and re-incremented when the FNDC opens
-                        ints[j].remove();
-                        break;
-                    }
+
+    // Hiring new staff
+    private void hireStaff() {
+        // interns have a remove
+        for(Staff i : storeStaff) {
+            if(!i.status) {
+                int position = storeStaff.indexOf(i);
+                firedStaff.add(i);
+                switch (i.type) {
+                    case Intern -> storeStaff.set(storeStaff.indexOf(i), new Interns());
+                    case Mechanic -> storeStaff.set(storeStaff.indexOf(i), new Mechanics());
+                    case Salesperson -> storeStaff.set(storeStaff.indexOf(i), new Salespeople());
+                    case Driver -> storeStaff.set(storeStaff.indexOf(i), new Driver());
                 }
-            }
-            // Checking on the Salespeople to promote an intern
-            if(!salespeople[i].status)
-            {
-                for(int j= 0;j < 3;j++)
-                {
-                    if(ints[j].status)
-                    {
-                        salespeople[i] = new Salespeople(ints[j]);
-                        out.println(ints[j].name + " just got promoted to Salesperson!");
-                        ints[j].remove();
-                        break;
-                    }
-                }
+                Staff newEmployee = storeStaff.get(position);
+                print("Just hired a new " + newEmployee.type+ " named " + newEmployee.name);
             }
         }
+    }
 
-        for(int i = 0;i < ints.length;i++) {
-            if(drivers[i].injured) {
-                out.println(drivers[i].name + " is too injured to race, they left the FNDC! (Wins: " + drivers[i].winCount + ')');
-                drivers[i] = new Driver();
-                out.println(drivers[i].name + " just got hired and is ready to race!");
-            }
-            if(!ints[i].status) {
-                ints[i] = new Interns();
-                out.println(ints[i].name + " just got hired!");
-            }
-        }
-
-    // Checking the inventory for sold vehicles
-        for(int i = 0;i < inventory.size();i++) {
-            if(Boolean.TRUE.equals(inventory.get(i).sold)) {
-                // add to the sold vehicles
-                soldVehicles.add(inventory.get(i));
-                // switch statement to get new vehicles
-                switch (inventory.get(i).vType) {
-                    case PerformanceCar -> inventory.set(i, new PerformanceCar());
-                    case Car -> inventory.set(i, new Car());
-                    case Pickup -> inventory.set(i, new Pickup());
-                    // Added the new vehicles to be bought if sold
-                    case ElectricCar -> inventory.set(i, new ElectricCar());
-                    case MonsterTruck -> inventory.set(i, new MonsterTruck());
-                    case Motorcycle -> inventory.set(i, new Motorcycle());
+    // updating the inventory, operating budget, and the sold vehicles array list
+    private void updateInventory() {
+        for(Vehicle x : inventory) {
+            if(Boolean.TRUE.equals(x.sold)) {
+                soldVehicles.add(x);
+                int position = inventory.indexOf(x);
+                switch (x.vType) {
+                    case Car -> inventory.set(inventory.indexOf(x), new Car());
+                    case Pickup -> inventory.set(inventory.indexOf(x), new Pickup());
+                    case PerformanceCar -> inventory.set(inventory.indexOf(x), new PerformanceCar());
+                    case ElectricCar -> inventory.set(inventory.indexOf(x), new ElectricCar());
+                    case Motorcycle -> inventory.set(inventory.indexOf(x), new Motorcycle());
+                    case MonsterTruck -> inventory.set(inventory.indexOf(x), new MonsterTruck());
                 }
-
-                Vehicle display = inventory.get(i);
-                out.println("Purchased " + display.vCondition + ", " + display.vCleanliness + "  " + display.vehicleName + " for $" + df.format(display.cost));
-                operatingBudget = operatingBudget - inventory.get(i).cost;
+                Vehicle display = inventory.get(position);
+                print("Purchased " + display.vCondition + ", " + display.vCleanliness + "  " + display.vehicleName + " for $" + df.format(display.cost));
+                operatingBudget-=display.cost;
             }
         }
+    }
+    // Getting a list of buyers depending on the day of the week
+    private Buyer[] getBuyers(Enums.daysInWeek w) {
+        Buyer[] buyersList;
+        // Initializing the size of the array of objects given the day
+        if(w.equals(Enums.daysInWeek.Friday) || w.equals(Enums.daysInWeek.Saturday)) {
+            buyersList = new Buyer[random.nextInt(2, 9)];
+        } else {
+            buyersList = new Buyer[random.nextInt(6)];
+        }
+        for(int i = 0;i < buyersList.length;i++) { buyersList[i] = new Buyer();}
+        return buyersList;
+    }
+
+    // quitting chance of the employees
+    private void quitChance(){
+        int length = random.nextInt(3);
+        for(int i = 0;i < length;i++) {
+            storeStaff.get(random.nextInt(storeStaff.size())).quit();
+        }
+    }
+
+    // Commending the best employees for their type for each day
+    private void commendEmployees() {
+        double max = 0;
+        Staff bestEmployee = storeStaff.get(0);
+        for(Staff i : storeStaff) {
+            if(i.totalEarned > max) {
+                max = i.totalEarned;
+                bestEmployee = i;
+            }
+        }
+        print("The top employee is " + bestEmployee.name + " has made $" + bestEmployee.totalEarned);
 
     }
 
+    /**
+     * FNDC functionality
+     */
+    // When the FNDC opens, call this method, everyday it will instantiate new objects
+    protected void opening() {
+        print("Opening...");
+        checkBalance();
+        hireStaff();
+        updateInventory();
+    }
+
     //Washing at the FNDC()
-    public static void washing()
+    public void washing()
     {
-        //Prompt the user
-        out.println("Washing...");
-        int intern = random.nextInt(random.nextInt(ints.length));
-        // Random intern will wash the vehicles, increment budget as well
-        for(int i = 0;i < random.nextInt(3, 12);i++) {
-            ints[intern].wash(intern);
-            intern = random.nextInt(ints.length);
+        // Prompt the user:
+        print("Washing...");
+        ArrayList<Staff> interns = Staff.getStaffByType(storeStaff, Enums.staffType.Intern);
+        for(Staff x : interns) {
+            Interns i = (Interns) x;
+            operatingBudget-=i.wash(inventory);
         }
     }
 
     //Mechanics call to get the action going
-    public static void repairing() {
-        out.println("Repairing....");
-        for(int i = 0;i < random.nextInt(3, 12);i++) {
-            operatingBudget -= mechanics[random.nextInt(mechanics.length)].fix();
+    public void repairing() {
+        print("Repairing....");
+        ArrayList<Staff> mechanics = Staff.getStaffByType(storeStaff, Enums.staffType.Mechanic);
+        for(Staff i : mechanics) {
+            Mechanics m = (Mechanics) i;
+            operatingBudget-=m.fix(inventory);
         }
     }
 
-
     //Selling the Vehicles under circumstances
-    public static void selling(Enums.daysInWeek x) {
-        out.println("Selling... ");
-        // Initializing the array of buyers chances of getting a vehicle
-        Buyer[] buyers;
+    public void selling(Enums.daysInWeek x) {
+        print("Selling....");
+        Buyer[] buyers = getBuyers(x);
+        print(buyers.length + " buyers showed up today...");
 
-        // Initializing the size of the array of objects given the day
-        if(x.equals(Enums.daysInWeek.Friday) || x.equals(Enums.daysInWeek.Saturday)) {
-            buyers = new Buyer[random.nextInt(2, 9)];
-        } else {
-            buyers = new Buyer[random.nextInt(6)];
-        }
-        out.println(buyers.length + "buyers showed up today...");
-
-
-        //instantiating the objects in array
-        for(int i = 0;i < buyers.length;i++) {
-            buyers[i] = new Buyer();
-            operatingBudget -= salespeople[random.nextInt(salespeople.length)].sell(buyers[i]);
+        ArrayList<Staff> sales = Staff.getStaffByType(storeStaff, Enums.staffType.Salesperson);
+        for(int j = 0;j < buyers.length;j++) {
+            for(Staff i : sales) {
+                Salespeople s = (Salespeople) i;
+                operatingBudget-=s.sell(buyers[j], inventory);
+                if(j == buyers.length -1) {
+                    break;
+                }
+                j++;
+            }
         }
     }
 
     // Will only be executed on Wednesday and Sunday
-    public static void raceDay(Enums.daysInWeek x) {
+    public void raceDay(Enums.daysInWeek x) {
         if(x.equals(Enums.daysInWeek.Wednesday) || x.equals(Enums.daysInWeek.Sunday)) {
-            out.println("\t\t--- Race Day ---");
+            print("\t\t--- Race Day ---");
         } else { return;}
 
-        ArrayList<Integer> carPos = new ArrayList<>();
         // Random VALID vehicle type will be chosen
         Enums.vehicleType randType = Enums.vehicleType.values()[random.nextInt(Enums.vehicleType.values().length)];
 
@@ -189,63 +195,40 @@ public class FNDC {
             randType = Enums.vehicleType.values()[random.nextInt(Enums.vehicleType.values().length)];
         }
 
-        for(Vehicle i : inventory) {
-            if(randType.equals(i.vType) && !i.vCondition.equals(Enums.vehicleCondition.Broken)) {
-                carPos.add(inventory.indexOf(i));
-                if(carPos.size() == 3) {
-                    break;
-                }
-            }
-        }
-
         // Race positions
         ArrayList<Integer> numPositions = new ArrayList<>(20);
         for(int i = 0;i < 20;i++) {numPositions.add(i);}
 
+        ArrayList<Vehicle> racingCars = Vehicle.getRacingTypes(inventory, randType);
+        ArrayList<Staff> drivers = Staff.getStaffByType(storeStaff, Enums.staffType.Driver);
         int position;
         //Race:(While assigning vehicle to driver: )
-        for(int i = 0;i < carPos.size();i++) {
+        for(Staff i:drivers) {
             position = random.nextInt(numPositions.size());
-            drivers[i].race(carPos.get(0), numPositions.get(position));
-            carPos.remove(0);
+            Driver d = (Driver) i;
+            operatingBudget-=d.race(numPositions.get(position), racingCars.get(drivers.indexOf(i)));
             numPositions.remove(position);
+            if(drivers.indexOf(i) + 1 == racingCars.size()) {
+                break;
+            }
         }
     }
 
-    public static void ending() {
+    public void ending() {
         // Incrementing values
-        for(int i = 0;i < 3;i++) {
-            mechanics[i].endDay();
-            ints[i].endDay();
-            salespeople[i].endDay();
-            drivers[i].endDay();
+        for(Staff i : storeStaff) {
+            i.endDay();
         }
-        /*
-         Having the chance that a staff member quits
-        */
-        int quitChance = random.nextInt(10);
-        int randEmp = random.nextInt(3);
-        if(quitChance < 1)
-        {
-            mechanics[randEmp].quit();
-        }
-        quitChance = random.nextInt(10);
-        randEmp = random.nextInt(3);
-        if(quitChance < 1)
-        {
-            salespeople[randEmp].quit();
-        }
-        quitChance = random.nextInt(10);
-        randEmp = random.nextInt(3);
-        if(quitChance < 1)
-        {
-            ints[randEmp].quit();
-        }
-
-        out.println(inventory.size() + " vehicles in inventory.");
-        out.println(soldVehicles.size() + " sold vehicles.");
+        //IMPLEMENT QUITTING!
+        quitChance();
+        print(inventory.size() + " vehicles in inventory.");
+        print(soldVehicles.size() + " sold vehicles.");
+        print(firedStaff.size() + " employees terminated.");
+        commendEmployees();
         // Outputting the Budget in the FNDC
-        out.println("Opening...(Current budget $" + df.format(operatingBudget) + ')');
+        print("Opening...(Current budget $" + df.format(operatingBudget) + ')');
+
 
     }
 }
+
