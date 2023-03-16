@@ -1,0 +1,41 @@
+			*** North_FNDC Day 14 ***
+				  Sunday
+		--- Race Day ---
+Cycler_5
+Volt_4
+Tracker_3
+JeepRanger_4
+Length:  3
+Driver0 just finished in 1 place with the Batman_0
+Driver0 is a winner and got a bonus of $10000!
+Batman_0 increased in price!
+Length:  3
+Driver11 just finished in 12 place with the Bigfoot_1
+Length:  3
+Driver9 just finished in 5 place with the Zombie_3
+Closing:
+54 vehicles in inventory.
+14 sold vehicles.
+11 employees terminated.
+The top employee is Mechanic_0 has made $33954.00
+Ending budget: $3811628.48
+
+			*** South_FNDC Day 14 ***
+		--- Race Day ---
+JeepRanger_7
+Length:  3
+Driver7 just finished in 16 place with the Lifter_17
+Lifter_17 got damaged during the race!
+Length:  3
+Driver10 just finished in 9 place with the Runner_14
+Length:  3
+Driver13 just finished in 19 place with the Pusher_9
+Pusher_9 got damaged during the race!
+Driver13 got injured!
+Sales_10 has quit the FNDC. They worked 2 day(s) and made $240.00
+Closing:
+54 vehicles in inventory.
+16 sold vehicles.
+10 employees terminated.
+The top employee is Mechanic_4 has made $24054.00
+Ending budget: $3700930.39

@@ -1,0 +1,76 @@
+			*** North_FNDC Day 26 ***
+				  Friday
+Opening:
+Just hired a new Mechanic named Mechanic_11
+Washing....
+Intern_16 is washing using the ElbowGrease method!
+Climber_5 is already Sparkling!
+Intern_16 is washing using the ElbowGrease method!
+Climber_5 is already Sparkling!
+Intern_7 is washing using the ElbowGrease method!
+Intern_7 washed Pusher_21 from Clean to Broken
+Intern_8 is washing using the Detailed method!
+BMX_4 is already Sparkling!
+Intern_8 is washing using the Detailed method!
+BMX_4 is already Sparkling!
+Repairing....
+Mechanic_10 couldn't fix the Mater_34
+Mechanic_10 couldn't fix the Batman_0
+Mechanic_11 just fixed Mazda_2 from Used to New
+Mechanic_11 just got a bonus of $10000
+Mechanic_11 couldn't fix the Batman_0
+Mechanic_8 couldn't fix the Bolt_0
+Selling....
+3 buyers showed up today...
+Sales_7 just sold the Nissan_32 for $28694.21 to Buyer_127
+Sales_7 got a bonus of $500
+Buyer_128 decided not to buy the Mater_34
+Buyer_129 decided not to buy the Mater_34
+Driver18 has quit the FNDC. They worked 5 day(s) and made $832.00
+Closing:
+54 vehicles in inventory.
+33 sold vehicles.
+25 employees terminated.
+The top employee is Mechanic_8 has made $15204.00
+Ending budget: $2355987.97
+
+			*** South_FNDC Day 26 ***
+Opening:
+Just hired a new Intern named Intern_17
+Just hired a new Driver named Driver23
+Purchased Used, Dirty  Corolla_33 for $14161.68
+Purchased Broken, Dirty  CyberTruck_36 for $39031.56
+Purchased Broken, Sparkling  Climber_26 for $37775.80
+Purchased New, Clean  Mater_37 for $10547.26
+Washing....
+Intern_3 is washing using the Detailed method!
+Ferrari_10 is already Sparkling!
+Intern_17 is washing using the ElbowGrease method!
+Intern_17 washed 2Wheeler_6 from Clean to Used
+Intern_15 is washing using the Detailed method!
+Intern_15 couldn't wash the vehicle...
+Intern_15 is washing using the Detailed method!
+Intern_15 couldn't wash the vehicle...
+Repairing....
+Mechanic_6 couldn't fix the Cyborg_11
+Mechanic_4 just fixed Cycle_8 from Broken to Used
+Mechanic_4 just got a bonus of $800
+Mechanic_4 couldn't fix the Brutus_10
+Mechanic_9 just fixed Pusher_9 from Broken to Used
+Mechanic_9 just got a bonus of $1200
+Mechanic_9 couldn't fix the CyberTruck_10
+Selling....
+5 buyers showed up today...
+Buyer_130 decided not to buy the Mater_37
+Sales_4 just sold the Corolla_33 for $28323.36 to Buyer_131
+Sales_4 got a bonus of $500
+Sales_18 just sold the Mater_37 for $21094.52 to Buyer_132
+Sales_18 got a bonus of $950
+Sales_6 just sold the Pusher_9 for $229377.63 to Buyer_134
+Sales_6 got a bonus of $750
+Closing:
+54 vehicles in inventory.
+30 sold vehicles.
+24 employees terminated.
+The top employee is Mechanic_6 has made $36000.00
+Ending budget: $2184577.75

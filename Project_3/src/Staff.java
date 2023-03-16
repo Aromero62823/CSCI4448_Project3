@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 // Staff that is made up of 3 distinct group
-public abstract class Staff implements SysOutPrint{
+public abstract class Staff {
     protected static final DecimalFormat df = new DecimalFormat("0.00");
     Random random = new Random();
     //Employee Attributes:
@@ -41,14 +41,15 @@ public abstract class Staff implements SysOutPrint{
 
     // When a worker quits, sets their status to false
     void quit() {
-        print(name + "has quit the FNDC. They worked "+ daysWorked +  " days and made $" + df.format(totalEarned));
+        Log.log(name + " has quit the FNDC. They worked "+ daysWorked +  " day(s) and made $" + df.format(totalEarned));
         status = false;
     }
 
     // Incrementing the days worked by the employees by 1. 8-hour shifts
-    void endDay() {
+    double endDay() {
         daysWorked++;
         totalEarned = totalEarned + (wage * 8);
+        return wage * 8.00;
     }
 }
 
@@ -63,13 +64,6 @@ class Mechanics extends Staff {
         wage = 17.00;
         id++;
     }
-    // Instantiate the same object with new values
-    public Mechanics (Interns intern) {
-        name = intern.name;
-        totalEarned = intern.totalEarned;
-        daysWorked = intern.daysWorked;
-        status = true;
-    }
 
     public double fix(ArrayList<Vehicle> vehicles) {
         double repairBonusTotal = 0;
@@ -80,15 +74,15 @@ class Mechanics extends Staff {
             Enums.vehicleCondition before = vehicles.get(randVehicle).vCondition;
 
             if (Boolean.TRUE.equals(vehicles.get(randVehicle).fixVehicle())) {
-                print(name + " just fixed " + vehicles.get(randVehicle).vehicleName +
+                Log.log(name + " just fixed " + vehicles.get(randVehicle).vehicleName +
                         " from " + before + " to " + vehicles.get(randVehicle).vCondition);
 
-                print(name + " just got a bonus of $" + vehicles.get(randVehicle).repairBonus);
+                Log.log(name + " just got a bonus of $" + vehicles.get(randVehicle).repairBonus);
                 // Increment the bonus
                 totalEarned += vehicles.get(randVehicle).repairBonus;
                 repairBonusTotal += vehicles.get(randVehicle).repairBonus;
             } else {
-                print(name + " couldn't fix the " + vehicles.get(randVehicle).vehicleName);
+                Log.log(name + " couldn't fix the " + vehicles.get(randVehicle).vehicleName);
             }
         }
         return repairBonusTotal;
@@ -119,7 +113,7 @@ class Interns extends Staff {
         int upperBound = 0;
 
         for(int i = 0;i < random.nextInt(1, 3);i++) {
-            print(name + " is washing using the " + washType + " method!");
+            Log.log(name + " is washing using the " + washType + " method!");
             if(!vehicle.vCleanliness.equals(Enums.vehicleCleanliness.Sparkling)) {
                 switch (washType) {
                     case Chemical -> {
@@ -132,14 +126,14 @@ class Interns extends Staff {
                         }
                         if (vehicles.get(randVehicle).cleanCar(lowerBound, upperBound, washType)) {
                             if (vehicles.get(randVehicle).vCleanliness.equals(Enums.vehicleCleanliness.Sparkling)) {
-                                print(name + " just got a bonus of $" + vehicle.washBonus + " for cleaning " + vehicle.vehicleName);
+                                Log.log(name + " just got a bonus of $" + vehicle.washBonus + " for cleaning " + vehicle.vehicleName);
                                 totalEarned += vehicle.washBonus;
                                 totalWashBonus += vehicle.washBonus;
                             }
-                            print(name + " washed " + vehicle.vehicleName + " from " + vehicle.vCleanliness +
+                            Log.log(name + " washed " + vehicle.vehicleName + " from " + vehicle.vCleanliness +
                                     " to " + vehicles.get(randVehicle).vCondition);
                         } else {
-                            print(name + " couldn't wash the vehicle...");
+                            Log.log(name + " couldn't wash the vehicle...");
                         }
                     }
 
@@ -154,14 +148,14 @@ class Interns extends Staff {
                         }
                         if (vehicles.get(randVehicle).cleanCar(lowerBound, upperBound, washType)) {
                             if (vehicles.get(randVehicle).vCleanliness.equals(Enums.vehicleCleanliness.Sparkling)) {
-                                print(name + " just got a bonus of $" + vehicle.washBonus + " for cleaning " + vehicle.vehicleName);
+                                Log.log(name + " just got a bonus of $" + vehicle.washBonus + " for cleaning " + vehicle.vehicleName);
                                 totalEarned += vehicle.washBonus;
                                 totalWashBonus += vehicle.washBonus;
                             }
-                            print(name + " washed " + vehicle.vehicleName + " from " + vehicle.vCleanliness +
+                            Log.log(name + " washed " + vehicle.vehicleName + " from " + vehicle.vCleanliness +
                                     " to " + vehicles.get(randVehicle).vCondition);
                         } else {
-                            print(name + " couldn't wash the vehicle...");
+                            Log.log(name + " couldn't wash the vehicle...");
                         }
                     }
                     case Detailed -> {
@@ -174,19 +168,19 @@ class Interns extends Staff {
                         }
                         if (vehicles.get(randVehicle).cleanCar(lowerBound, upperBound, washType)) {
                             if (vehicles.get(randVehicle).vCleanliness.equals(Enums.vehicleCleanliness.Sparkling)) {
-                                print(name + " just got a bonus of $" + vehicle.washBonus + " for cleaning " + vehicle.vehicleName);
+                                Log.log(name + " just got a bonus of $" + vehicle.washBonus + " for cleaning " + vehicle.vehicleName);
                                 totalEarned += vehicle.washBonus;
                                 totalWashBonus += vehicle.washBonus;
                             }
-                            print(name + " washed " + vehicle.vehicleName + " from " + vehicle.vCleanliness +
+                            Log.log(name + " washed " + vehicle.vehicleName + " from " + vehicle.vCleanliness +
                                     " to " + vehicles.get(randVehicle).vCondition);
                         } else {
-                            print(name + " couldn't wash the vehicle...");
+                            Log.log(name + " couldn't wash the vehicle...");
                         }
 
                     }
                 }
-            } else { print(vehicle.vehicleName + " is already Sparkling!"); }
+            } else { Log.log(vehicle.vehicleName + " is already Sparkling!"); }
         }
         return totalWashBonus;
     }
@@ -202,36 +196,30 @@ class Salespeople extends Staff {
         id++;
     }
 
-    // Instantiate the same object with newly transported variables and values
-    public Salespeople (Interns intern) {
-        name = intern.name;
-        totalEarned = intern.totalEarned;
-        daysWorked = intern.daysWorked;
-        status = true;
-    }
-
     public double sell(Buyer cust, ArrayList<Vehicle> vehicles) {
-        double salestotal = 0;
+        double salesTotal = 0;
         // Iterate through the elements in the buyers array
         int chance = random.nextInt(10);
         // save the car
         int carPos = cust.buyCar(vehicles);
 
-        Vehicle soldveh = vehicles.get(carPos);
+        Vehicle soldVehicle = vehicles.get(carPos);
 
         if(chance <= cust.buyingChance) {
-            print(name + " just sold the " + soldveh.vehicleName + " for $" + df.format(soldveh.salesPrice) + " to " + cust.name);
-            print(name + " got a bonus of $" + soldveh.salesBonus);
-            vehicles.get(carPos).customerAddons(cust);
-            vehicles.get(carPos).sold = true;
-            totalEarned+=soldveh.salesBonus;
-            salestotal+=soldveh.salesPrice;
+            if(Boolean.TRUE.equals(soldVehicle.sold)) {
+                Log.log("The vehicle has already been sold!");
+            } else {
+                Log.log(name + " just sold the " + soldVehicle.vehicleName + " for $" + df.format(soldVehicle.salesPrice) + " to " + cust.name);
+                Log.log(name + " got a bonus of $" + soldVehicle.salesBonus);
+                vehicles.get(carPos).customerAddons(cust);
+                vehicles.get(carPos).sold = true;
+                totalEarned += soldVehicle.salesBonus;
+                salesTotal += soldVehicle.salesPrice;
+            }
         } else {
-            print(cust.name + " couldn't decided not to buy the " + soldveh.vehicleName);
+            Log.log(cust.name + " decided not to buy the " + soldVehicle.vehicleName);
         }
-        // if the car wasn't sold
-        return salestotal;
-
+        return salesTotal;
     }
 }
 
@@ -251,18 +239,18 @@ class Driver extends Staff {
         int injureChance = random.nextInt(10);
 
         if(injureChance <= 3) {
-            print(name + " got injured!");
+            Log.log(name + " got injured!");
             status = false;
         }
     }
 
     public double race(int position, Vehicle vehicle) {
-        print(name + " just finished in " + position + " place with the " + vehicle.vehicleName);
+        Log.log(name + " just finished in " + position + " place with the " + vehicle.vehicleName);
         if(position > 14) {
             vehicle.vLost();
             lost();
         } else if(position < 4) {
-            print(name + " is a winner and got a bonus of $" + vehicle.raceWinBonus + '!');
+            Log.log(name + " is a winner and got a bonus of $" + vehicle.raceWinBonus + '!');
             totalEarned+= vehicle.raceWinBonus;
             winCount++;
             vehicle.vWin();

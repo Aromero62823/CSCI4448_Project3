@@ -1,15 +1,9 @@
-/**
- * Angel Romero
- * -- Revamped the code --
- * 2/15/23
- * Object-Oriented Analysis and Design
- * Borrowed similar object design from the Project 2 code made by Bruce Montgomery
- */
+// Angel Romero
+// 3-12-2023
+// OOAD - Professor Bruce Montgomery
 
-// Executing the Simulator class(Executes the program)
-public class Main {
+public class Main implements SysOutPrint {
     public static void main(String[] args) {
-        // Running the Program, Run it!!!
         Simulator sim = new Simulator();
         sim.run();
     }

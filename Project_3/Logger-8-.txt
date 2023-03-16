@@ -1,0 +1,66 @@
+			*** North_FNDC Day 8 ***
+				  Monday
+Opening:
+Just hired a new Driver named Driver9
+Purchased New, Sparkling  Jeep_18 for $15218.87
+Washing....
+Intern_0 is washing using the Chemical method!
+Intern_0 washed Batman_2 from Clean to Broken
+Intern_7 is washing using the ElbowGrease method!
+Tracker_3 is already Sparkling!
+Intern_8 is washing using the Detailed method!
+Intern_8 couldn't wash the vehicle...
+Intern_8 is washing using the Detailed method!
+Intern_8 washed Lightning_5 from Clean to New
+Repairing....
+Mechanic_0 couldn't fix the Cycle_0
+Mechanic_1 just fixed Mater_13 from Broken to Used
+Mechanic_1 just got a bonus of $1500
+Mechanic_1 couldn't fix the Mater_5
+Mechanic_2 just fixed Mater_13 from Used to New
+Mechanic_2 just got a bonus of $1500
+Mechanic_2 couldn't fix the Cycle_0
+Selling....
+1 buyers showed up today...
+Sales_0 just sold the Climber_1 for $49477.17 to Buyer_27
+Sales_0 got a bonus of $750
+Buyer_27 just added the ExtendedWarranty!
+Sales_0 has quit the FNDC. They worked 8 day(s) and made $3160.00
+Sales_1 has quit the FNDC. They worked 8 day(s) and made $2410.00
+Closing:
+54 vehicles in inventory.
+7 sold vehicles.
+4 employees terminated.
+The top employee is Mechanic_0 has made $27288.00
+Ending budget: $4482609.50
+
+			*** South_FNDC Day 8 ***
+Opening:
+Purchased Used, Clean  Nissan_19 for $16768.24
+Purchased Broken, Dirty  Runner_14 for $38830.35
+Purchased Broken, Dirty  Cruiser_20 for $17501.23
+Washing....
+Intern_3 is washing using the Detailed method!
+Intern_3 washed Cruiser_20 from Clean to Broken
+Intern_4 is washing using the Detailed method!
+Pusher_9 is already Sparkling!
+Intern_9 is washing using the Detailed method!
+Corolla_9 just went from Clean to Dirty
+Intern_9 washed Corolla_9 from Dirty to Used
+Repairing....
+Mechanic_6 just fixed Cycle_7 from Used to New
+Mechanic_6 just got a bonus of $800
+Mechanic_6 couldn't fix the Pusher_9
+Mechanic_4 just fixed Runner_14 from Broken to Used
+Mechanic_4 just got a bonus of $1200
+Mechanic_5 just fixed Corolla_15 from Broken to Used
+Mechanic_5 just got a bonus of $1000
+Mechanic_5 couldn't fix the Bugatti_6
+Selling....
+0 buyers showed up today...
+Closing:
+54 vehicles in inventory.
+9 sold vehicles.
+6 employees terminated.
+The top employee is Mechanic_6 has made $16052.00
+Ending budget: $4309479.88

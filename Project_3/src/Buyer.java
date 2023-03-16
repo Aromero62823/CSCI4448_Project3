@@ -1,13 +1,15 @@
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
 
 // Creating the buyer class that will have a new name, preferred typing of vehicle.
-public class Buyer implements SysOutPrint{
+public class Buyer implements SysOutPrint {
     String name;
     Enums.vehicleType preferredType;
     Enums.vehicleAddons preferredAddon;
     private static int id = 0;
     int buyingChance;
+    int carPos;
 
     Random random = new Random();
 
@@ -24,15 +26,46 @@ public class Buyer implements SysOutPrint{
         } else if (buyingChance <= 8) {
             buyingChance = 2; // 20% chance to buy 7 - 8
         } else {
-            buyingChance = 1; // 10% chance to buys
+            buyingChance = 1; // 10% chance to buy
         }
         id++;
+    }
+
+    public Buyer(String name) {
+        // Increment values
+        this.name = name;
+        preferredType = Enums.vehicleType.values()[random.nextInt(3)];
+        preferredAddon = Enums.vehicleAddons.values() [random.nextInt(Enums.vehicleAddons.values().length)];
+        buyingChance = random.nextInt(10);
+
+        // Instantiating their buying chance
+        if(buyingChance <= 6) {
+            buyingChance = 6; // 70% chance to buy 0 - 6
+        } else if (buyingChance <= 8) {
+            buyingChance = 2; // 20% chance to buy 7 - 8
+        } else {
+            buyingChance = 1; // 10% chance to buy
+        }
+    }
+
+    public int getBuyerMenu() {
+        Scanner input = new Scanner(System.in);
+
+        print("1. I would like to go to another FNDC location?");
+        print("2. Ask for the salesperson's name? ");
+        print("3. Ask for the time? ");
+        print("4. Ask for a different salesperson? ");
+        print("5. Ask the salesperson for the inventory(select an item)? ");
+        print("6. Ask about the vehicle? ");
+        print("7. Buy vehicle? ");
+        print("8. End the interaction?");
+
+        return input.nextInt();
     }
 
     // Given the inventory of the cars, and the preferred vehicle type, will return the inventory with new values
     public int buyCar(ArrayList<Vehicle> vehicles) {
         Vehicle car = new Vehicle();
-        int pos = 0;
         // The above arrow is to save the car that it lands on
 
         //Iterate through the vehicles and pick a car
@@ -42,7 +75,7 @@ public class Buyer implements SysOutPrint{
                         && Boolean.TRUE.equals(!vehicles.get(i).sold)) {
                 // save the car
                 car = vehicles.get(i);
-                pos = i;
+                carPos = i;
                 break;
             }
             // changed the buyers preference and restart the loop
@@ -59,7 +92,7 @@ public class Buyer implements SysOutPrint{
         if(car.vCleanliness.equals(Enums.vehicleCleanliness.Sparkling)) {
             buyingChance++;
         }
-        return pos;
+        return carPos;
     }
 
     public boolean addonChance() {
@@ -88,7 +121,7 @@ public class Buyer implements SysOutPrint{
             }
         }
 
-        if(Boolean.TRUE.equals(done)) { print(name + " just added the " + preferredAddon + '!' );}
+        if(Boolean.TRUE.equals(done)) { Log.log(name + " just added the " + preferredAddon + '!' );}
         return done;
     }
 }

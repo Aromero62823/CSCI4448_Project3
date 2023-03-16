@@ -1,0 +1,66 @@
+			*** North_FNDC Day 22 ***
+				  Monday
+Opening:
+Just hired a new Driver named Driver18
+Just hired a new Intern named Intern_16
+Just hired a new Salesperson named Sales_14
+Purchased Used, Clean  CyberTruck_30 for $19552.95
+Purchased New, Clean  CyberTruck_31 for $25442.74
+Purchased New, Clean  Mater_32 for $29062.12
+Washing....
+Intern_16 is washing using the ElbowGrease method!
+Intern_16 couldn't wash the vehicle...
+Intern_7 is washing using the ElbowGrease method!
+Intern_7 washed 2Wheeler_4 from Clean to New
+Intern_8 is washing using the Detailed method!
+Intern_8 just got a bonus of $1000 for cleaning Batman_0
+Intern_8 washed Batman_0 from Sparkling to New
+Intern_8 is washing using the Detailed method!
+Batman_0 is already Sparkling!
+Repairing....
+Mechanic_0 couldn't fix the Porsche_1
+Mechanic_0 couldn't fix the Bigfoot_1
+Mechanic_1 couldn't fix the TowTruck_3
+Mechanic_8 couldn't fix the Shock_2
+Selling....
+0 buyers showed up today...
+Sales_14 has quit the FNDC. They worked 1 day(s) and made $120.00
+Sales_12 has quit the FNDC. They worked 8 day(s) and made $4410.00
+Closing:
+54 vehicles in inventory.
+30 sold vehicles.
+20 employees terminated.
+The top employee is Mechanic_0 has made $38042.00
+Ending budget: $2607971.62
+
+			*** South_FNDC Day 22 ***
+Opening:
+Just hired a new Driver named Driver19
+Purchased New, Clean  Corolla_31 for $13895.60
+Purchased Used, Dirty  TowTruck_33 for $37714.67
+Washing....
+Intern_3 is washing using the Detailed method!
+Intern_3 couldn't wash the vehicle...
+Intern_13 is washing using the Detailed method!
+Intern_13 washed Brutus_10 from Clean to New
+Intern_13 is washing using the Detailed method!
+Intern_13 couldn't wash the vehicle...
+Intern_15 is washing using the Detailed method!
+Intern_15 washed Ferrari_10 from Clean to New
+Intern_15 is washing using the Detailed method!
+Intern_15 couldn't wash the vehicle...
+Repairing....
+Mechanic_6 couldn't fix the 2Wheeler_6
+Mechanic_4 just fixed DirtBike_10 from Used to New
+Mechanic_4 just got a bonus of $3000
+Mechanic_5 couldn't fix the Cycle_8
+Selling....
+0 buyers showed up today...
+Sales_13 has quit the FNDC. They worked 8 day(s) and made $2210.00
+Mechanic_5 has quit the FNDC. They worked 22 day(s) and made $41192.00
+Closing:
+54 vehicles in inventory.
+25 sold vehicles.
+17 employees terminated.
+The top employee is Mechanic_5 has made $41192.00
+Ending budget: $2931828.65

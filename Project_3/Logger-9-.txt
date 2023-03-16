@@ -1,0 +1,77 @@
+			*** North_FNDC Day 9 ***
+				  Tuesday
+Opening:
+Just hired a new Salesperson named Sales_7
+Just hired a new Salesperson named Sales_8
+Purchased Used, Sparkling  Pusher_15 for $39436.51
+Washing....
+Intern_0 is washing using the Chemical method!
+Mazda_5 is already Sparkling!
+Intern_7 is washing using the ElbowGrease method!
+Intern_7 washed Shock_2 from Clean to New
+Intern_7 is washing using the ElbowGrease method!
+Intern_7 couldn't wash the vehicle...
+Intern_8 is washing using the Detailed method!
+Intern_8 couldn't wash the vehicle...
+Repairing....
+Mechanic_0 couldn't fix the Mazda_2
+Mechanic_1 couldn't fix the Jeep_18
+Mechanic_1 just fixed Tracker_0 from Used to New
+Mechanic_1 just got a bonus of $3000
+Mechanic_2 just fixed Pusher_0 from Broken to Used
+Mechanic_2 just got a bonus of $1200
+Selling....
+3 buyers showed up today...
+Buyer_28 decided not to buy the Mater_13
+Sales_8 just sold the Jeep_18 for $30437.75 to Buyer_29
+Sales_8 got a bonus of $500
+Buyer_30 decided not to buy the Rider_13
+Intern_0 has quit the FNDC. They worked 9 day(s) and made $828.00
+Closing:
+54 vehicles in inventory.
+8 sold vehicles.
+6 employees terminated.
+The top employee is Mechanic_0 has made $27424.00
+Ending budget: $4406992.05
+
+			*** South_FNDC Day 9 ***
+Opening:
+Washing....
+Intern_3 is washing using the Detailed method!
+Intern_3 couldn't wash the vehicle...
+Intern_4 is washing using the Detailed method!
+Bugatti_9 is already Sparkling!
+Intern_9 is washing using the Detailed method!
+Intern_9 couldn't wash the vehicle...
+Intern_9 is washing using the Detailed method!
+Intern_9 couldn't wash the vehicle...
+Repairing....
+Mechanic_6 couldn't fix the Lightning_11
+Mechanic_6 couldn't fix the Rider_10
+Mechanic_4 just fixed Ferrari_10 from Broken to Used
+Mechanic_4 just got a bonus of $10000
+Mechanic_4 just fixed Bolt_7 from Used to New
+Mechanic_4 just got a bonus of $1250
+Mechanic_5 just fixed MountainBike_11 from Used to New
+Mechanic_5 just got a bonus of $100
+Mechanic_5 just fixed Corolla_9 from Used to New
+Mechanic_5 just got a bonus of $1000
+Selling....
+5 buyers showed up today...
+Sales_6 just sold the Corolla_15 for $39173.27 to Buyer_31
+Sales_6 got a bonus of $500
+Sales_4 just sold the CyberTruck_14 for $43355.59 to Buyer_32
+Sales_4 got a bonus of $950
+Sales_5 just sold the Nissan_19 for $33536.48 to Buyer_33
+Sales_5 got a bonus of $500
+Buyer_33 just added the UnderCoating!
+Sales_6 just sold the Corolla_9 for $48982.08 to Buyer_35
+Sales_6 got a bonus of $500
+Buyer_35 just added the ExtendedWarranty!
+Driver8 has quit the FNDC. They worked 6 day(s) and made $998.40
+Closing:
+54 vehicles in inventory.
+9 sold vehicles.
+6 employees terminated.
+The top employee is Mechanic_4 has made $17324.00
+Ending budget: $4119066.02

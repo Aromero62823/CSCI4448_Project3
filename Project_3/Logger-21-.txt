@@ -1,0 +1,33 @@
+			*** North_FNDC Day 21 ***
+				  Sunday
+		--- Race Day ---
+Length:  3
+Driver0 just finished in 16 place with the Ferrari_0
+Ferrari_0 got damaged during the race!
+Driver0 got injured!
+Length:  3
+Driver15 just finished in 9 place with the Porsche_1
+Length:  3
+Driver9 just finished in 14 place with the Mazda_2
+Sales_11 has quit the FNDC. They worked 7 day(s) and made $4040.00
+Closing:
+54 vehicles in inventory.
+27 sold vehicles.
+17 employees terminated.
+The top employee is Mechanic_0 has made $37906.00
+Ending budget: $2684572.63
+
+			*** South_FNDC Day 21 ***
+		--- Race Day ---
+Length:  3
+Driver16 just finished in 14 place with the 2Wheeler_6
+Length:  3
+Driver10 just finished in 4 place with the Cycle_7
+Length:  3
+Driver17 just finished in 10 place with the Cycle_8
+Closing:
+54 vehicles in inventory.
+23 sold vehicles.
+16 employees terminated.
+The top employee is Mechanic_5 has made $41056.00
+Ending budget: $2987982.12

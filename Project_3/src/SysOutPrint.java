@@ -1,4 +1,6 @@
-// Citation from Bruce's code, will make my code much tighter and cleaner
+import static java.lang.System.*;
 public interface SysOutPrint {
-        default void print(String message) {System.out.println(message);}
+    default void print(String message) {
+        out.println(message);
+    }
 }

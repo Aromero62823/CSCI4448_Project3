@@ -1,0 +1,67 @@
+			*** North_FNDC Day 2 ***
+				  Tuesday
+Opening:
+Purchased Used, Clean  Jeep_12 for $16454.45
+Purchased Broken, Clean  Rider_13 for $19763.13
+Washing....
+Intern_0 is washing using the Chemical method!
+Zombie_3 is already Sparkling!
+Intern_0 is washing using the Chemical method!
+Zombie_3 is already Sparkling!
+Intern_1 is washing using the Detailed method!
+Intern_1 just got a bonus of $200 for cleaning BMX_4
+Intern_1 washed BMX_4 from Sparkling to Broken
+Intern_1 is washing using the Detailed method!
+BMX_4 is already Sparkling!
+Intern_2 is washing using the Detailed method!
+2Wheeler_1 is already Sparkling!
+Repairing....
+Mechanic_0 just fixed Porsche_1 from Used to New
+Mechanic_0 just got a bonus of $10000
+Mechanic_1 just fixed Rider_13 from Broken to Used
+Mechanic_1 just got a bonus of $1000
+Mechanic_1 just fixed Batman_4 from Broken to Used
+Mechanic_1 just got a bonus of $2000
+Mechanic_2 couldn't fix the Wheel-o_1
+Selling....
+2 buyers showed up today...
+Sales_0 just sold the Mater_0 for $51813.01 to Buyer_3
+Sales_0 got a bonus of $950
+Buyer_4 decided not to buy the Ford_1
+Driver2 has quit the FNDC. They worked 2 day(s) and made $332.80
+Closing:
+54 vehicles in inventory.
+2 sold vehicles.
+0 employees terminated.
+The top employee is Mechanic_0 has made $11472.00
+Ending budget: $4833215.22
+
+			*** South_FNDC Day 2 ***
+Opening:
+Just hired a new Mechanic named Mechanic_6
+Just hired a new Intern named Intern_6
+Purchased New, Sparkling  Pusher_12 for $26023.73
+Washing....
+Intern_3 is washing using the Detailed method!
+Intern_3 couldn't wash the vehicle...
+Intern_3 is washing using the Detailed method!
+Intern_3 couldn't wash the vehicle...
+Intern_4 is washing using the Detailed method!
+Intern_4 couldn't wash the vehicle...
+Intern_6 is washing using the Detailed method!
+Intern_6 couldn't wash the vehicle...
+Repairing....
+Mechanic_6 couldn't fix the Batman_6
+Mechanic_4 just fixed Pusher_7 from Used to New
+Mechanic_4 just got a bonus of $1200
+Mechanic_4 just fixed Bolt_10 from Broken to Used
+Mechanic_4 just got a bonus of $1250
+Mechanic_5 couldn't fix the Rider_10
+Selling....
+0 buyers showed up today...
+Closing:
+54 vehicles in inventory.
+1 sold vehicles.
+2 employees terminated.
+The top employee is Mechanic_4 has made $2722.00
+Ending budget: $4900792.27

@@ -1,0 +1,95 @@
+			*** North_FNDC Day 10 ***
+				  Wednesday
+Opening:
+Just hired a new Intern named Intern_10
+Purchased Used, Clean  Corolla_21 for $19313.00
+Washing....
+Intern_10 is washing using the ElbowGrease method!
+FordRunner_2 is already Sparkling!
+Intern_7 is washing using the ElbowGrease method!
+Intern_7 washed Bolt_0 from Clean to New
+Intern_8 is washing using the Detailed method!
+Intern_8 washed Batman_4 from Clean to Used
+Repairing....
+Mechanic_0 couldn't fix the BMX_2
+Mechanic_0 just fixed 2Wheeler_1 from Broken to Used
+Mechanic_0 just got a bonus of $800
+Mechanic_1 couldn't fix the Bigfoot_1
+Mechanic_1 couldn't fix the Batman_0
+Mechanic_2 just fixed HotRod_5 from Broken to Used
+Mechanic_2 just got a bonus of $800
+		--- Race Day ---
+Length:  3
+Driver0 just finished in 17 place with the Pusher_0
+Pusher_0 got damaged during the race!
+Length:  3
+Driver1 just finished in 5 place with the Pusher_15
+Length:  3
+Driver9 just finished in 15 place with the Pusher_3
+Pusher_3 got damaged during the race!
+Selling....
+3 buyers showed up today...
+Sales_7 just sold the Mater_13 for $97045.42 to Buyer_36
+Sales_7 got a bonus of $950
+Sales_8 just sold the CyberTruck_15 for $57617.95 to Buyer_37
+Sales_8 got a bonus of $950
+Buyer_38 decided not to buy the Corolla_21
+Mechanic_2 has quit the FNDC. They worked 10 day(s) and made $10860.00
+Driver1 has quit the FNDC. They worked 10 day(s) and made $1664.00
+Closing:
+54 vehicles in inventory.
+9 sold vehicles.
+7 employees terminated.
+The top employee is Mechanic_0 has made $28360.00
+Ending budget: $4229872.48
+
+			*** South_FNDC Day 10 ***
+Opening:
+Just hired a new Driver named Driver10
+Purchased Used, Dirty  Nissan_22 for $10722.53
+Purchased New, Clean  Corolla_23 for $19645.00
+Purchased Used, Clean  Mater_16 for $23221.11
+Purchased Broken, Dirty  Rider_24 for $13291.89
+Washing....
+Intern_3 is washing using the Detailed method!
+Intern_3 couldn't wash the vehicle...
+Intern_3 is washing using the Detailed method!
+Intern_3 just got a bonus of $200 for cleaning Cycler_9
+Intern_3 washed Cycler_9 from Sparkling to Used
+Intern_4 is washing using the Detailed method!
+Intern_4 couldn't wash the vehicle...
+Intern_4 is washing using the Detailed method!
+Cycle_9 is already Sparkling!
+Intern_9 is washing using the Detailed method!
+Intern_9 couldn't wash the vehicle...
+Intern_9 is washing using the Detailed method!
+Intern_9 couldn't wash the vehicle...
+Repairing....
+Mechanic_6 couldn't fix the Nissan_22
+Mechanic_4 just fixed Cruiser_20 from Broken to Used
+Mechanic_4 just got a bonus of $1000
+Mechanic_5 couldn't fix the Shock_6
+Mechanic_5 couldn't fix the MountainBike_11
+		--- Race Day ---
+Length:  3
+Driver7 just finished in 11 place with the Runner_14
+Length:  3
+Driver10 just finished in 0 place with the Pusher_9
+Driver10 is a winner and got a bonus of $2000!
+Pusher_9 increased in price!
+Length:  3
+Driver5 just finished in 12 place with the Armstrong_10
+Selling....
+5 buyers showed up today...
+Sales_6 just sold the Mater_16 for $46442.22 to Buyer_39
+Sales_6 got a bonus of $950
+Buyer_40 decided not to buy the Runner_14
+Sales_5 just sold the Ford_9 for $66897.77 to Buyer_41
+Sales_5 got a bonus of $950
+Buyer_43 decided not to buy the Nissan_22
+Closing:
+54 vehicles in inventory.
+13 sold vehicles.
+7 employees terminated.
+The top employee is Mechanic_4 has made $18460.00
+Ending budget: $3934102.28

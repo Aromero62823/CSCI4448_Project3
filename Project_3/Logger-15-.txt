@@ -1,0 +1,66 @@
+			*** North_FNDC Day 15 ***
+				  Monday
+Opening:
+Just hired a new Salesperson named Sales_11
+Just hired a new Salesperson named Sales_12
+Purchased New, Dirty  Mater_22 for $27216.36
+Washing....
+Intern_10 is washing using the ElbowGrease method!
+Intern_10 couldn't wash the vehicle...
+Intern_10 is washing using the ElbowGrease method!
+Intern_10 washed Mater_5 from Clean to New
+Intern_7 is washing using the ElbowGrease method!
+Intern_7 couldn't wash the vehicle...
+Intern_8 is washing using the Detailed method!
+Intern_8 couldn't wash the vehicle...
+Intern_8 is washing using the Detailed method!
+Intern_8 couldn't wash the vehicle...
+Repairing....
+Mechanic_0 couldn't fix the Tracker_0
+Mechanic_1 couldn't fix the Mater_5
+Mechanic_1 couldn't fix the TowTruck_3
+Mechanic_8 couldn't fix the Tracker_1
+Selling....
+1 buyers showed up today...
+Sales_7 just sold the Mater_22 for $54432.73 to Buyer_64
+Sales_7 got a bonus of $950
+Buyer_64 just added the SatelliteRadio!
+Intern_10 has quit the FNDC. They worked 6 day(s) and made $552.00
+Closing:
+54 vehicles in inventory.
+15 sold vehicles.
+13 employees terminated.
+The top employee is Mechanic_0 has made $34090.00
+Ending budget: $3725714.55
+
+			*** South_FNDC Day 15 ***
+Opening:
+Just hired a new Salesperson named Sales_13
+Just hired a new Driver named Driver14
+Purchased Used, Clean  Armstrong_18 for $22473.33
+Washing....
+Intern_3 is washing using the Detailed method!
+Batman_6 is already Sparkling!
+Intern_3 is washing using the Detailed method!
+Batman_6 is already Sparkling!
+Intern_4 is washing using the Detailed method!
+Intern_4 couldn't wash the vehicle...
+Intern_9 is washing using the Detailed method!
+Cycle_9 is already Sparkling!
+Intern_9 is washing using the Detailed method!
+Cycle_9 is already Sparkling!
+Repairing....
+Mechanic_6 just fixed Zombie_9 from Used to New
+Mechanic_6 just got a bonus of $2000
+Mechanic_6 couldn't fix the Mazda_11
+Mechanic_4 just fixed Cycle_9 from Used to New
+Mechanic_4 just got a bonus of $800
+Mechanic_5 couldn't fix the Zombie_7
+Selling....
+0 buyers showed up today...
+Closing:
+54 vehicles in inventory.
+17 sold vehicles.
+12 employees terminated.
+The top employee is Mechanic_4 has made $24990.00
+Ending budget: $3674113.86

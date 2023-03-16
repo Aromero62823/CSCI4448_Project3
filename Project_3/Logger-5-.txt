@@ -1,0 +1,74 @@
+			*** North_FNDC Day 5 ***
+				  Friday
+Opening:
+Purchased Broken, Clean  Mater_13 for $25878.78
+Purchased Used, Clean  Cruiser_14 for $13953.33
+Washing....
+Intern_0 is washing using the Chemical method!
+Intern_0 washed BMX_2 from Clean to Used
+Intern_7 is washing using the ElbowGrease method!
+Wheel-o_1 is already Sparkling!
+Intern_7 is washing using the ElbowGrease method!
+Wheel-o_1 is already Sparkling!
+Intern_8 is washing using the Detailed method!
+Mazda_3 is already Sparkling!
+Intern_8 is washing using the Detailed method!
+Mazda_3 is already Sparkling!
+Repairing....
+Mechanic_0 just fixed Tracker_1 from Broken to Used
+Mechanic_0 just got a bonus of $3000
+Mechanic_1 couldn't fix the Porsche_1
+Mechanic_2 couldn't fix the 2Wheeler_4
+Mechanic_2 couldn't fix the BMX_3
+Selling....
+3 buyers showed up today...
+Buyer_10 decided not to buy the Cruiser_14
+Buyer_11 decided not to buy the Cruiser_14
+Sales_2 just sold the Ford_1 for $75953.17 to Buyer_12
+Sales_2 got a bonus of $950
+Closing:
+54 vehicles in inventory.
+5 sold vehicles.
+3 employees terminated.
+The top employee is Mechanic_0 has made $16880.00
+Ending budget: $4636546.21
+
+			*** South_FNDC Day 5 ***
+Opening:
+Purchased Broken, Sparkling  Corolla_15 for $13057.76
+Purchased Used, Clean  CyberTruck_14 for $21677.80
+Washing....
+Intern_3 is washing using the Detailed method!
+Intern_3 couldn't wash the vehicle...
+Intern_4 is washing using the Detailed method!
+Intern_4 couldn't wash the vehicle...
+Intern_4 is washing using the Detailed method!
+Intern_4 couldn't wash the vehicle...
+Intern_6 is washing using the Detailed method!
+Intern_6 couldn't wash the vehicle...
+Repairing....
+Mechanic_6 just fixed MountainBike_7 from Used to New
+Mechanic_6 just got a bonus of $100
+Mechanic_6 just fixed Bugatti_6 from Used to New
+Mechanic_6 just got a bonus of $10000
+Mechanic_4 couldn't fix the Bolt_10
+Mechanic_5 just fixed Tracker_9 from Used to New
+Mechanic_5 just got a bonus of $3000
+Mechanic_5 couldn't fix the Cycle_7
+Selling....
+4 buyers showed up today...
+Sales_3 just sold the Jeep_7 for $38397.27 to Buyer_13
+Sales_3 got a bonus of $500
+Sales_4 just sold the Pusher_12 for $52047.47 to Buyer_14
+Sales_4 got a bonus of $750
+Sales_5 just sold the Corolla_8 for $21844.30 to Buyer_15
+Sales_5 got a bonus of $500
+Buyer_15 just added the UnderCoating!
+Intern_6 has quit the FNDC. They worked 4 day(s) and made $368.00
+Sales_3 has quit the FNDC. They worked 5 day(s) and made $2350.00
+Closing:
+54 vehicles in inventory.
+3 sold vehicles.
+4 employees terminated.
+The top employee is Mechanic_6 has made $13644.00
+Ending budget: $4611048.03

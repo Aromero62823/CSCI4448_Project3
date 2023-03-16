@@ -1,0 +1,38 @@
+			*** North_FNDC Day 7 ***
+				  Sunday
+		--- Race Day ---
+Cycler_5
+Length:  3
+Driver0 just finished in 17 place with the Pusher_0
+Pusher_0 got damaged during the race!
+Length:  3
+Driver1 just finished in 4 place with the Climber_1
+Length:  3
+Driver6 just finished in 15 place with the Runner_2
+Runner_2 got damaged during the race!
+Driver6 got injured!
+Closing:
+54 vehicles in inventory.
+6 sold vehicles.
+3 employees terminated.
+The top employee is Mechanic_0 has made $27152.00
+Ending budget: $4561744.18
+
+			*** South_FNDC Day 7 ***
+		--- Race Day ---
+MountainBike_11
+Corolla_9
+Ford_9
+Length:  3
+Driver7 just finished in 19 place with the Batman_6
+Batman_6 got damaged during the race!
+Length:  3
+Driver8 just finished in 7 place with the Zombie_7
+Length:  3
+Driver5 just finished in 11 place with the Batman_8
+Closing:
+54 vehicles in inventory.
+6 sold vehicles.
+6 employees terminated.
+The top employee is Mechanic_6 has made $15116.00
+Ending budget: $4387122.89
