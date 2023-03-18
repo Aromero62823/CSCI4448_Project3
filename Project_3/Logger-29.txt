@@ -1,0 +1,71 @@
+			*** North_FNDC Day 29 ***
+				  Monday
+Opening:
+Just hired a new Driver named Driver20
+Just hired a new Salesperson named Sales_15
+Just hired a new Mechanic named Mechanic_14
+Purchased Used, Sparkling  Jeep_39 for $10826.61
+Washing....
+Intern_11 is washing using the ElbowGrease method!
+Intern_11 couldn't wash the vehicle...
+Intern_11 is washing using the ElbowGrease method!
+Intern_11 washed MountainBike_2 from Clean to New
+Intern_8 is washing using the Chemical method!
+Intern_8 couldn't wash the vehicle...
+Intern_8 is washing using the Chemical method!
+Intern_8 couldn't wash the vehicle...
+Intern_17 is washing using the Chemical method!
+Intern_17 couldn't wash the vehicle...
+Intern_17 is washing using the Chemical method!
+Intern_17 couldn't wash the vehicle...
+Repairing....
+Mechanic_0 couldn't fix the DirtBike_1
+Mechanic_13 couldn't fix the Cycler_0
+Mechanic_13 just fixed JetCar_3 from Used to New
+Mechanic_13 just got a bonus of $10000
+Mechanic_14 couldn't fix the JetCar_2
+Selling....
+2 buyers showed up today...
+Sales_14 just sold the Climber_5 for $62223.96 to Buyer_158
+Sales_14 got a bonus of $750
+Buyer_159 decided not to buy the Jeep_39
+Driver2 has quit the FNDC. They worked 29 day(s) and made $19325.60
+Closing:
+54 vehicles in inventory.
+34 sold vehicles.
+20 employees terminated.
+The top employee is Mechanic_0 has made $41294.00
+Ending budget: $1864760.11
+
+			*** South_FNDC Day 29 ***
+Opening:
+Purchased Used, Clean  CyberTruck_35 for $15410.78
+Purchased Used, Dirty  Armstrong_38 for $31315.19
+Purchased Used, Clean  Corolla_40 for $16862.21
+Purchased New, Dirty  Climber_39 for $29918.18
+Purchased Used, Dirty  Ford_36 for $34185.09
+Washing....
+Intern_15 is washing using the ElbowGrease method!
+Intern_15 couldn't wash the vehicle...
+Intern_14 is washing using the Detailed method!
+Intern_14 washed Bigfoot_11 from Clean to New
+Intern_16 is washing using the ElbowGrease method!
+Intern_16 couldn't wash the vehicle...
+Repairing....
+Mechanic_10 couldn't fix the Mazda_8
+Mechanic_10 just fixed Lamborghini_10 from Broken to Used
+Mechanic_10 just got a bonus of $10000
+Mechanic_8 couldn't fix the Volt_6
+Mechanic_12 couldn't fix the Shock_7
+Selling....
+1 buyers showed up today...
+Sales_12 just sold the Corolla_40 for $33724.42 to Buyer_160
+Sales_12 got a bonus of $500
+Mechanic_8 has quit the FNDC. They worked 22 day(s) and made $40642.00
+Driver18 has quit the FNDC. They worked 12 day(s) and made $11996.80
+Closing:
+54 vehicles in inventory.
+48 sold vehicles.
+26 employees terminated.
+The top employee is Mechanic_8 has made $40642.00
+Ending budget: $1197732.89

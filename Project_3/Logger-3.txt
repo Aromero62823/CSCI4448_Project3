@@ -1,0 +1,91 @@
+			*** North_FNDC Day 3 ***
+				  Wednesday
+Opening:
+Purchased New, Sparkling  Nissan_12 for $16501.59
+Purchased New, Clean  Rider_13 for $16139.38
+Purchased New, Sparkling  Rider_14 for $16883.56
+Purchased New, Sparkling  Cruiser_15 for $11674.44
+Washing....
+Intern_0 is washing using the Chemical method!
+Intern_0 couldn't wash the vehicle...
+Intern_1 is washing using the Chemical method!
+Intern_1 couldn't wash the vehicle...
+Intern_1 is washing using the Chemical method!
+JetCar_2 is already Sparkling!
+Intern_2 is washing using the Chemical method!
+Intern_2 couldn't wash the vehicle...
+Repairing....
+Mechanic_0 just fixed Cycler_0 from Broken to Used
+Mechanic_0 just got a bonus of $100
+Mechanic_0 couldn't fix the HotRod_3
+Mechanic_1 couldn't fix the MountainBike_3
+Mechanic_2 couldn't fix the Armstrong_3
+Mechanic_2 couldn't fix the Max-D_2
+		--- Race Day ---
+Wheel-o_4
+Length:  3
+Driver6 just finished in 1 place with the JetCar_2
+Driver6 is a winner and got a bonus of $10000!
+JetCar_2 increased in price!
+Length:  3
+Driver1 just finished in 9 place with the JetCar_3
+Length:  3
+Driver2 just finished in 0 place with the Ferrari_4
+Driver2 is a winner and got a bonus of $10000!
+Ferrari_4 increased in price!
+Selling....
+2 buyers showed up today...
+Sales_0 just sold the TowTruck_1 for $77459.03 to Buyer_15
+Sales_0 got a bonus of $950
+Buyer_15 just added the SatelliteRadio!
+Buyer_16 decided not to buy the Climber_12
+Intern_1 has quit the FNDC. They worked 3 day(s) and made $2776.00
+Driver6 has quit the FNDC. They worked 2 day(s) and made $10332.80
+Closing:
+54 vehicles in inventory.
+5 sold vehicles.
+1 employees terminated.
+The top employee is Driver2 has made $10499.20
+Ending budget: $4509303.46
+
+			*** South_FNDC Day 3 ***
+Opening:
+Just hired a new Intern named Intern_6
+Just hired a new Intern named Intern_7
+Washing....
+Intern_6 is washing using the ElbowGrease method!
+HotRod_11 is already Sparkling!
+Intern_7 is washing using the Chemical method!
+Intern_7 washed DirtBike_8 from Clean to New
+Intern_7 is washing using the Chemical method!
+Intern_7 couldn't wash the vehicle...
+Intern_5 is washing using the Chemical method!
+Intern_5 couldn't wash the vehicle...
+Intern_5 is washing using the Chemical method!
+Intern_5 couldn't wash the vehicle...
+Repairing....
+Mechanic_6 couldn't fix the DirtBike_8
+Mechanic_4 just fixed TowTruck_6 from Broken to Used
+Mechanic_4 just got a bonus of $1500
+Mechanic_4 couldn't fix the Shock_11
+Mechanic_5 couldn't fix the Shock_11
+		--- Race Day ---
+Length:  3
+Driver7 just finished in 14 place with the Lifter_13
+Length:  3
+Driver4 just finished in 5 place with the Lifter_8
+Length:  3
+Driver5 just finished in 9 place with the Runner_9
+Selling....
+1 buyers showed up today...
+Sales_3 just sold the Lifter_13 for $44706.72 to Buyer_17
+Sales_3 got a bonus of $750
+Buyer_17 just added the SatelliteRadio!
+Intern_7 has quit the FNDC. They worked 1 day(s) and made $92.00
+Sales_3 has quit the FNDC. They worked 3 day(s) and made $1110.00
+Closing:
+54 vehicles in inventory.
+2 sold vehicles.
+4 employees terminated.
+The top employee is Mechanic_5 has made $14208.00
+Ending budget: $4727115.76

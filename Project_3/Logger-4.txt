@@ -1,0 +1,69 @@
+			*** North_FNDC Day 4 ***
+				  Thursday
+Opening:
+Just hired a new Driver named Driver8
+Just hired a new Intern named Intern_8
+Purchased Broken, Clean  CyberTruck_13 for $38075.42
+Washing....
+Intern_0 is washing using the Chemical method!
+Intern_0 couldn't wash the vehicle...
+Intern_0 is washing using the Chemical method!
+Intern_0 couldn't wash the vehicle...
+Intern_8 is washing using the Chemical method!
+Intern_8 washed Batman_3 from Clean to Broken
+Intern_2 is washing using the Chemical method!
+HotRod_4 just went from Clean to Dirty
+Intern_2 washed HotRod_4 from Dirty to Broken
+Repairing....
+Mechanic_0 couldn't fix the Rider_13
+Mechanic_1 couldn't fix the MountainBike_3
+Mechanic_1 couldn't fix the MountainBike_2
+Mechanic_2 couldn't fix the Rider_13
+Mechanic_2 couldn't fix the CyberTruck_3
+Selling....
+1 buyers showed up today...
+Sales_0 just sold the Climber_12 for $76270.47 to Buyer_18
+Sales_0 got a bonus of $750
+Closing:
+54 vehicles in inventory.
+6 sold vehicles.
+3 employees terminated.
+The top employee is Driver2 has made $10665.60
+Ending budget: $4393414.38
+
+			*** South_FNDC Day 4 ***
+Opening:
+Just hired a new Salesperson named Sales_6
+Just hired a new Intern named Intern_9
+Purchased Broken, Clean  Runner_14 for $26463.07
+Washing....
+Intern_6 is washing using the ElbowGrease method!
+Intern_6 washed TowTruck_6 from Clean to Used
+Intern_6 is washing using the ElbowGrease method!
+Intern_6 couldn't wash the vehicle...
+Intern_9 is washing using the Chemical method!
+Intern_9 washed JeepRanger_6 from Clean to Used
+Intern_9 is washing using the Chemical method!
+Intern_9 couldn't wash the vehicle...
+Intern_5 is washing using the Chemical method!
+Intern_5 couldn't wash the vehicle...
+Intern_5 is washing using the Chemical method!
+Intern_5 couldn't wash the vehicle...
+Repairing....
+Mechanic_6 just fixed Runner_7 from Broken to Used
+Mechanic_6 just got a bonus of $1200
+Mechanic_6 just fixed Runner_9 from Used to New
+Mechanic_6 just got a bonus of $1200
+Mechanic_4 just fixed Runner_14 from Broken to Used
+Mechanic_4 just got a bonus of $1200
+Mechanic_5 couldn't fix the Runner_9
+Mechanic_5 just fixed MountainBike_6 from Used to New
+Mechanic_5 just got a bonus of $100
+Selling....
+0 buyers showed up today...
+Closing:
+54 vehicles in inventory.
+3 sold vehicles.
+6 employees terminated.
+The top employee is Mechanic_5 has made $14444.00
+Ending budget: $4695409.49

@@ -1,0 +1,79 @@
+			*** North_FNDC Day 6 ***
+				  Saturday
+Opening:
+Just hired a new Mechanic named Mechanic_7
+Purchased New, Dirty  Cruiser_16 for $12422.37
+Purchased Used, Dirty  Ford_14 for $14407.77
+Purchased Broken, Sparkling  Lifter_16 for $36158.33
+Washing....
+Intern_0 is washing using the Chemical method!
+Intern_0 couldn't wash the vehicle...
+Intern_0 is washing using the Chemical method!
+Mater_2 just went from Clean to Dirty
+Intern_0 washed Mater_2 from Dirty to Used
+Intern_8 is washing using the Chemical method!
+Intern_8 washed BMX_1 from Clean to Used
+Intern_8 is washing using the Chemical method!
+Oh no! BMX_1 just broke!
+Intern_8 couldn't wash the vehicle...
+Intern_2 is washing using the Chemical method!
+HotRod_1 is already Sparkling!
+Intern_2 is washing using the Chemical method!
+HotRod_1 is already Sparkling!
+Repairing....
+Mechanic_0 just fixed Ford_14 from Used to New
+Mechanic_0 just got a bonus of $1500
+Mechanic_0 just fixed Zombie_1 from Broken to Used
+Mechanic_0 just got a bonus of $2000
+Mechanic_7 just fixed Volt_0 from Used to New
+Mechanic_7 just got a bonus of $1250
+Mechanic_2 couldn't fix the Jeep_4
+Selling....
+2 buyers showed up today...
+Sales_0 just sold the Ford_14 for $36019.42 to Buyer_26
+Sales_0 got a bonus of $950
+Buyer_27 decided not to buy the Cruiser_16
+Closing:
+54 vehicles in inventory.
+10 sold vehicles.
+4 employees terminated.
+The top employee is Driver2 has made $10998.40
+Ending budget: $4072209.40
+
+			*** South_FNDC Day 6 ***
+Opening:
+Just hired a new Intern named Intern_10
+Purchased New, Dirty  Runner_17 for $26453.87
+Purchased Used, Sparkling  Lifter_18 for $26180.25
+Washing....
+Intern_6 is washing using the ElbowGrease method!
+Intern_6 couldn't wash the vehicle...
+Intern_10 is washing using the Chemical method!
+Oh no! Cycle_7 just broke!
+Intern_10 washed Cycle_7 from Clean to Broken
+Intern_10 is washing using the Chemical method!
+Intern_10 couldn't wash the vehicle...
+Intern_5 is washing using the Chemical method!
+Intern_5 couldn't wash the vehicle...
+Repairing....
+Mechanic_6 couldn't fix the HotRod_11
+Mechanic_6 just fixed Mazda_8 from Used to New
+Mechanic_6 just got a bonus of $10000
+Mechanic_4 just fixed Jeep_8 from Used to New
+Mechanic_4 just got a bonus of $1000
+Mechanic_5 couldn't fix the Jeep_8
+Mechanic_5 couldn't fix the MountainBike_8
+Selling....
+3 buyers showed up today...
+Sales_6 just sold the Rider_6 for $39123.19 to Buyer_28
+Sales_6 got a bonus of $500
+Sales_4 just sold the Corolla_7 for $32766.79 to Buyer_29
+Sales_4 got a bonus of $500
+Sales_5 just sold the TowTruck_6 for $33762.35 to Buyer_30
+Sales_5 got a bonus of $950
+Closing:
+54 vehicles in inventory.
+5 sold vehicles.
+7 employees terminated.
+The top employee is Mechanic_6 has made $16330.00
+Ending budget: $4352660.81

@@ -1,0 +1,38 @@
+			*** North_FNDC Day 7 ***
+				  Sunday
+		--- Race Day ---
+FordRunner_4
+Length:  3
+Driver8 just finished in 9 place with the HotRod_0
+Length:  3
+Driver1 just finished in 13 place with the HotRod_1
+Length:  3
+Driver2 just finished in 1 place with the 2Wheeler_2
+Driver2 is a winner and got a bonus of $2500!
+2Wheeler_2 increased in price!
+Driver8 has quit the FNDC. They worked 4 day(s) and made $665.60
+Closing:
+54 vehicles in inventory.
+10 sold vehicles.
+4 employees terminated.
+The top employee is Driver2 has made $13664.80
+Ending budget: $4068166.20
+
+			*** South_FNDC Day 7 ***
+		--- Race Day ---
+TowTruck_9
+Bolt_9
+Length:  3
+Driver7 just finished in 10 place with the Zombie_6
+Length:  3
+Driver4 just finished in 6 place with the Bigfoot_7
+Length:  3
+Driver5 just finished in 7 place with the Cyborg_8
+Mechanic_5 has quit the FNDC. They worked 7 day(s) and made $15652.00
+Mechanic_4 has quit the FNDC. They worked 7 day(s) and made $5852.00
+Closing:
+54 vehicles in inventory.
+5 sold vehicles.
+7 employees terminated.
+The top employee is Mechanic_6 has made $16466.00
+Ending budget: $4351117.61

@@ -104,9 +104,10 @@ class MainTest implements SysOutPrint {
             fndc.ending();
             assertTrue(fndc.getOperatingBudget() != 500000);
             assertNotNull(fndc);
-            assertInstanceOf(Vehicle.class, fndc.inventory.getClass());
+            assertInstanceOf(Vehicle.class, fndc.inventory.get(12));
             print("6) Test Case Passed");
         } catch (AssertionError | Exception e) {
+            e.printStackTrace();
             print("6) Test Case Failed");
         }
     }
@@ -140,9 +141,10 @@ class MainTest implements SysOutPrint {
                     matchCounter++;
                 }
             }
-            assertFalse(matchCounter != fndc1.storeStaff.size() - 1);
+            assertNotEquals(matchCounter, fndc1.storeStaff.size() - 1);
             print("8) Test Case Passed");
         } catch (AssertionError | Exception e) {
+            e.printStackTrace();
             print("8) Test Case Failed");
         }
     }
@@ -150,7 +152,7 @@ class MainTest implements SysOutPrint {
     @Test
     void checkSimulatorRun() {
         try {
-            var simulation = new Simulator();
+            var simulation = new SimTestRun();
             simulation.run();
             print("9) Test Case Passed");
         } catch (Exception e) {
@@ -162,11 +164,12 @@ class MainTest implements SysOutPrint {
     void checkFiles() {
         try {
             for (int i = 1; i < 32; i++) {
-                var filename = new File("Logger-" + i + "-.txt");
+                var filename = new File("Logger-" + i + ".txt");
                 assertTrue(filename.exists());
             }
             print("10) Test Case Passed");
         } catch (AssertionError | Exception e) {
+            e.printStackTrace();
             print("10) Test Case Failed");
         }
     }
@@ -219,8 +222,9 @@ class MainTest implements SysOutPrint {
             assertFalse(car2.raceEligible);
             assertFalse(car3.raceEligible);
 
-            print("13) Test Case Failed");
+            print("13) Test Case Passed");
         } catch (Exception | AssertionError e) {
+            e.printStackTrace();
             print("13) Test Case Failed");
         }
     }

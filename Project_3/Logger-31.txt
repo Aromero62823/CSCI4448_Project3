@@ -1,0 +1,100 @@
+			*** North_FNDC Day 31 ***
+				  Wednesday
+Opening:
+Just hired a new Salesperson named Sales_16
+Washing....
+Intern_11 is washing using the ElbowGrease method!
+Intern_11 washed JeepRanger_3 from Clean to New
+Intern_11 is washing using the ElbowGrease method!
+Intern_11 couldn't wash the vehicle...
+Intern_8 is washing using the Chemical method!
+Intern_8 washed CyberTruck_13 from Clean to Used
+Intern_8 is washing using the Chemical method!
+Oh no! CyberTruck_13 just broke!
+Intern_8 couldn't wash the vehicle...
+Intern_17 is washing using the Chemical method!
+Mater_18 is already Sparkling!
+Repairing....
+Mechanic_0 couldn't fix the MountainBike_2
+Mechanic_0 couldn't fix the JeepRanger_2
+Mechanic_13 just fixed Climber_30 from Broken to Used
+Mechanic_13 just got a bonus of $1200
+Mechanic_13 couldn't fix the Jeep_4
+Mechanic_14 just fixed Nissan_22 from Broken to Used
+Mechanic_14 just got a bonus of $1000
+		--- Race Day ---
+Length:  3
+Driver20 just finished in 17 place with the Bigfoot_0
+Bigfoot_0 got damaged during the race!
+Driver20 got injured!
+Length:  3
+Driver17 just finished in 16 place with the Zombie_1
+Zombie_1 got damaged during the race!
+Driver17 got injured!
+Length:  3
+Driver21 just finished in 15 place with the Max-D_2
+Max-D_2 got damaged during the race!
+
+			*** South_FNDC Day 31 ***
+Opening:
+Just hired a new Intern named Intern_18
+Washing....
+Intern_15 is washing using the ElbowGrease method!
+Intern_15 couldn't wash the vehicle...
+Intern_15 is washing using the ElbowGrease method!
+Intern_15 washed Lightning_8 from Clean to New
+Intern_18 is washing using the Detailed method!
+Bugatti_9 is already Sparkling!
+Intern_18 is washing using the Detailed method!
+Bugatti_9 is already Sparkling!
+Intern_16 is washing using the ElbowGrease method!
+Intern_16 washed MountainBike_6 from Clean to New
+Intern_16 is washing using the ElbowGrease method!
+Intern_16 couldn't wash the vehicle...
+Repairing....
+Mechanic_10 couldn't fix the Jeep_11
+Mechanic_10 couldn't fix the MountainBike_11
+Mechanic_15 just fixed TowTruck_9 from Used to New
+Mechanic_15 just got a bonus of $1500
+Mechanic_15 just fixed Cyborg_8 from Used to New
+Mechanic_15 just got a bonus of $2000
+Mechanic_12 just fixed Runner_9 from Used to New
+Mechanic_12 just got a bonus of $1200
+		--- Race Day ---
+Shock_7
+JeepRanger_6
+BMX_10
+Length:  3
+Driver22 just finished in 13 place with the Armstrong_38
+Length:  3
+Driver19 just finished in 2 place with the Climber_39
+Driver19 is a winner and got a bonus of $2000!
+Climber_39 increased in price!
+Length:  3
+Driver13 just finished in 0 place with the Runner_9
+Driver13 is a winner and got a bonus of $2000!
+Runner_9 increased in price!
+
+			*** North_FNDC Day 31 ***
+Welcome to the North_FNDC!
+Welcome to the South_FNDC!
+Sales_13 just sold the Armstrong_38 for $62630.39 to User
+Sales_13 got a bonus of $750
+Intern_11 has quit the FNDC. They worked 21 day(s) and made $1932.00
+Intern_8 has quit the FNDC. They worked 28 day(s) and made $7576.00
+Closing:
+54 vehicles in inventory.
+35 sold vehicles.
+22 employees terminated.
+The top employee is Mechanic_0 has made $43566.00
+Ending budget: $1825399.87
+
+			*** South_FNDC Day 31 ***
+Sales_12 has quit the FNDC. They worked 10 day(s) and made $5150.00
+Driver19 has quit the FNDC. They worked 14 day(s) and made $14329.60
+Closing:
+54 vehicles in inventory.
+49 sold vehicles.
+29 employees terminated.
+The top employee is Mechanic_10 has made $34184.00
+Ending budget: $1231183.18

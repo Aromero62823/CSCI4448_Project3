@@ -1,0 +1,86 @@
+			*** North_FNDC Day 20 ***
+				  Saturday
+Opening:
+Purchased Broken, Sparkling  Mater_27 for $25174.81
+Purchased New, Dirty  CyberTruck_28 for $30112.08
+Purchased Used, Dirty  Nissan_28 for $16948.58
+Purchased Broken, Sparkling  Lifter_32 for $28510.66
+Washing....
+Intern_11 is washing using the ElbowGrease method!
+Intern_11 couldn't wash the vehicle...
+Intern_11 is washing using the ElbowGrease method!
+Intern_11 couldn't wash the vehicle...
+Intern_8 is washing using the Chemical method!
+Intern_8 couldn't wash the vehicle...
+Intern_12 is washing using the ElbowGrease method!
+Rider_20 is already Sparkling!
+Repairing....
+Mechanic_0 just fixed Ferrari_4 from Used to New
+Mechanic_0 just got a bonus of $10000
+Mechanic_7 just fixed Bigfoot_0 from Used to New
+Mechanic_7 just got a bonus of $2000
+Mechanic_7 couldn't fix the 2Wheeler_5
+Mechanic_2 just fixed Jeep_4 from Used to New
+Mechanic_2 just got a bonus of $1000
+Mechanic_2 couldn't fix the FordRunner_0
+Selling....
+4 buyers showed up today...
+Sales_10 just sold the CyberTruck_28 for $60224.16 to Buyer_103
+Sales_10 got a bonus of $950
+Buyer_104 decided not to buy the Climber_4
+Buyer_105 decided not to buy the Climber_4
+Closing:
+54 vehicles in inventory.
+29 sold vehicles.
+14 employees terminated.
+The top employee is Mechanic_7 has made $27640.00
+Ending budget: $2446357.63
+
+			*** South_FNDC Day 20 ***
+Opening:
+Purchased New, Dirty  Nissan_29 for $10451.32
+Purchased Used, Sparkling  Nissan_30 for $12677.65
+Purchased Broken, Clean  Climber_33 for $29703.22
+Washing....
+Intern_6 is washing using the ElbowGrease method!
+The Armstrong_27 just became Like New!
+Intern_6 couldn't wash the vehicle...
+Intern_6 is washing using the ElbowGrease method!
+Intern_6 couldn't wash the vehicle...
+Intern_14 is washing using the Detailed method!
+Intern_14 couldn't wash the vehicle...
+Intern_14 is washing using the Detailed method!
+Intern_14 washed Jeep_23 from Clean to New
+Intern_13 is washing using the Chemical method!
+Oh no! JetCar_11 just broke!
+Intern_13 couldn't wash the vehicle...
+Intern_13 is washing using the Chemical method!
+Intern_13 couldn't wash the vehicle...
+Repairing....
+Mechanic_10 couldn't fix the Cycler_9
+Mechanic_8 couldn't fix the MountainBike_6
+Mechanic_12 just fixed Jeep_10 from Used to New
+Mechanic_12 just got a bonus of $1000
+Mechanic_12 couldn't fix the Ford_22
+Selling....
+7 buyers showed up today...
+Sales_6 just sold the Nissan_29 for $20902.65 to Buyer_107
+Sales_6 got a bonus of $500
+Buyer_107 just added the ExtendedWarranty!
+Buyer_108 decided not to buy the CyberTruck_26
+Sales_5 just sold the Nissan_30 for $25355.31 to Buyer_109
+Sales_5 got a bonus of $500
+Sales_6 just sold the CyberTruck_26 for $25713.75 to Buyer_111
+Sales_6 got a bonus of $950
+Sales_8 just sold the Jeep_23 for $35757.69 to Buyer_112
+Sales_8 got a bonus of $500
+Sales_5 just sold the Ford_22 for $51652.81 to Buyer_113
+Sales_5 got a bonus of $950
+Intern_13 has quit the FNDC. They worked 3 day(s) and made $276.00
+Sales_6 has quit the FNDC. They worked 17 day(s) and made $10640.00
+Closing:
+54 vehicles in inventory.
+29 sold vehicles.
+22 employees terminated.
+The top employee is Mechanic_8 has made $33468.00
+Ending budget: $2289846.58

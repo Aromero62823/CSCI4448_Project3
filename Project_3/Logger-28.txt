@@ -1,0 +1,39 @@
+			*** North_FNDC Day 28 ***
+				  Sunday
+		--- Race Day ---
+MountainBike_3
+Length:  3
+Driver16 just finished in 19 place with the HotRod_0
+HotRod_0 got damaged during the race!
+Driver16 got injured!
+Length:  3
+Driver17 just finished in 14 place with the 2Wheeler_2
+Length:  3
+Driver2 just finished in 7 place with the HotRod_3
+Sales_7 has quit the FNDC. They worked 19 day(s) and made $5230.00
+Mechanic_2 has quit the FNDC. They worked 28 day(s) and made $29458.00
+Closing:
+54 vehicles in inventory.
+33 sold vehicles.
+17 employees terminated.
+The top employee is Mechanic_0 has made $41158.00
+Ending budget: $1949353.88
+
+			*** South_FNDC Day 28 ***
+		--- Race Day ---
+Length:  3
+Driver18 just finished in 3 place with the Ferrari_7
+Driver18 is a winner and got a bonus of $10000!
+Ferrari_7 increased in price!
+Length:  3
+Driver19 just finished in 0 place with the Mazda_8
+Driver19 is a winner and got a bonus of $10000!
+Mazda_8 increased in price!
+Length:  3
+Driver13 just finished in 9 place with the Bugatti_9
+Closing:
+54 vehicles in inventory.
+43 sold vehicles.
+26 employees terminated.
+The top employee is Mechanic_8 has made $40506.00
+Ending budget: $1370691.96

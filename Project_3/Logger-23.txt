@@ -1,0 +1,64 @@
+			*** North_FNDC Day 23 ***
+				  Tuesday
+Opening:
+Washing....
+Intern_11 is washing using the ElbowGrease method!
+Intern_11 couldn't wash the vehicle...
+Intern_8 is washing using the Chemical method!
+Ferrari_5 is already Sparkling!
+Intern_8 is washing using the Chemical method!
+Ferrari_5 is already Sparkling!
+Intern_12 is washing using the ElbowGrease method!
+JeepRanger_5 is already Sparkling!
+Repairing....
+Mechanic_0 just fixed Rider_5 from Broken to Used
+Mechanic_0 just got a bonus of $1000
+Mechanic_13 just fixed Rider_20 from Broken to Used
+Mechanic_13 just got a bonus of $1000
+Mechanic_2 couldn't fix the 2Wheeler_2
+Mechanic_2 couldn't fix the Cycler_0
+Selling....
+0 buyers showed up today...
+Intern_12 has quit the FNDC. They worked 8 day(s) and made $736.00
+Closing:
+54 vehicles in inventory.
+30 sold vehicles.
+15 employees terminated.
+The top employee is Mechanic_0 has made $35978.00
+Ending budget: $2409734.37
+
+			*** South_FNDC Day 23 ***
+Opening:
+Purchased Used, Sparkling  Rider_34 for $15672.13
+Purchased New, Sparkling  TowTruck_32 for $29633.06
+Purchased Used, Clean  Pusher_34 for $25258.33
+Washing....
+Intern_15 is washing using the ElbowGrease method!
+Intern_15 washed Cycler_9 from Clean to New
+Intern_15 is washing using the ElbowGrease method!
+Cycler_9 just went from Clean to Dirty
+Intern_15 washed Cycler_9 from Dirty to New
+Intern_14 is washing using the Detailed method!
+Intern_14 washed Cruiser_32 from Clean to Used
+Intern_16 is washing using the ElbowGrease method!
+Intern_16 couldn't wash the vehicle...
+Intern_16 is washing using the ElbowGrease method!
+The Jeep_10 just became Like New!
+Intern_16 washed Jeep_10 from Clean to New
+Repairing....
+Mechanic_10 just fixed Ferrari_7 from Broken to Used
+Mechanic_10 just got a bonus of $10000
+Mechanic_10 couldn't fix the Bigfoot_11
+Mechanic_8 couldn't fix the Cycler_7
+Mechanic_12 couldn't fix the TowTruck_32
+Mechanic_12 just fixed Bigfoot_7 from Used to New
+Mechanic_12 just got a bonus of $2000
+Selling....
+1 buyers showed up today...
+Buyer_118 decided not to buy the Pusher_34
+Closing:
+54 vehicles in inventory.
+37 sold vehicles.
+25 employees terminated.
+The top employee is Mechanic_8 has made $33876.00
+Ending budget: $1974659.19

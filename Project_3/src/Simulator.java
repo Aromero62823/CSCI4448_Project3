@@ -1,13 +1,18 @@
+import javafx.application.Application;
+
 import java.util.ArrayList;
 import java.util.Random;
+// The simulator class will handle all executed FNDC objects
+// and the log/tracker objects
 public class Simulator implements SysOutPrint {
     private static final Random random = new Random();
     void run() {
+        // Instantiate the objects and put them in an ArrayList of objects
         ArrayList<FNDC> dealerships = new ArrayList<>();
 
         dealerships.add(new FNDC("North_FNDC"));
         dealerships.add(new FNDC("South_FNDC"));
-
+        // Instantiate the Tracker
         Tracker tracker = new Tracker();
 
         Enums.daysInWeek day;
@@ -27,6 +32,7 @@ public class Simulator implements SysOutPrint {
         }
     }
 
+    // Normal day execution for normal workdays(Logging as well of course!)
     public static void runFNDC(ArrayList<FNDC> dealerships, Enums.daysInWeek d, int x, Tracker t) {
         System.out.println("\n\t\t\t*** FNCD Day " + x + " ***");
         for(int i = 0; i < dealerships.size();i++) {
@@ -45,6 +51,7 @@ public class Simulator implements SysOutPrint {
         }
     }
 
+    // Same thing here but, instead of terminating, this will be the 31st day
     private static void userFNDC(ArrayList<FNDC> dealerships, Enums.daysInWeek d, int x, Tracker t) {
         System.out.println("\n\t\t\t*** FNCD Day " + x + " ***");
         ArrayList<String> names = new ArrayList<>();
@@ -66,6 +73,7 @@ public class Simulator implements SysOutPrint {
 
         // user choice
         String userChoice = randFNDC.userSelling(user, names);
+        // The user menu where they will be able to go in between objects
 
         while(!userChoice.equals("Quit")) {
             randFNDC = dealerships.get(names.indexOf(userChoice));
@@ -79,6 +87,7 @@ public class Simulator implements SysOutPrint {
             t.end(dealership.name, x, dealership.getOperatingBudget(), dealership.getStaffTotal());
 
         }
+        // Log everything from the log-n-.txt files
         Log.simulateResults();
     }
 

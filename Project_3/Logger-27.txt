@@ -1,0 +1,83 @@
+			*** North_FNDC Day 27 ***
+				  Saturday
+Opening:
+Just hired a new Salesperson named Sales_14
+Purchased Broken, Clean  Cruiser_36 for $17523.95
+Purchased Broken, Sparkling  Climber_37 for $33103.93
+Washing....
+Intern_11 is washing using the ElbowGrease method!
+Intern_11 couldn't wash the vehicle...
+Intern_11 is washing using the ElbowGrease method!
+Brutus_4 just went from Clean to Dirty
+Intern_11 washed Brutus_4 from Dirty to Used
+Intern_8 is washing using the Chemical method!
+Intern_8 couldn't wash the vehicle...
+Intern_8 is washing using the Chemical method!
+Intern_8 couldn't wash the vehicle...
+Intern_17 is washing using the Chemical method!
+Lifter_16 is already Sparkling!
+Repairing....
+Mechanic_0 couldn't fix the JeepRanger_5
+Mechanic_0 couldn't fix the MountainBike_2
+Mechanic_13 couldn't fix the DirtBike_1
+Mechanic_2 just fixed BMX_1 from Used to New
+Mechanic_2 just got a bonus of $100
+Selling....
+7 buyers showed up today...
+Buyer_143 decided not to buy the CyberTruck_13
+Buyer_144 decided not to buy the CyberTruck_13
+Buyer_145 decided not to buy the Climber_5
+Buyer_147 decided not to buy the Climber_5
+Buyer_148 decided not to buy the Climber_5
+Sales_11 just sold the Jeep_25 for $30119.37 to Buyer_149
+Sales_11 got a bonus of $500
+Driver16 has quit the FNDC. They worked 12 day(s) and made $1996.80
+Closing:
+54 vehicles in inventory.
+33 sold vehicles.
+17 employees terminated.
+The top employee is Mechanic_0 has made $41022.00
+Ending budget: $1950897.08
+
+			*** South_FNDC Day 27 ***
+Opening:
+Purchased Broken, Sparkling  Rider_37 for $14668.85
+Purchased Used, Sparkling  TowTruck_33 for $12283.62
+Purchased Used, Dirty  Rider_38 for $15253.75
+Purchased Used, Sparkling  TowTruck_34 for $11863.12
+Washing....
+Intern_15 is washing using the ElbowGrease method!
+Intern_15 washed Bolt_9 from Clean to New
+Intern_14 is washing using the Detailed method!
+Porsche_6 is already Sparkling!
+Intern_14 is washing using the Detailed method!
+Porsche_6 is already Sparkling!
+Intern_16 is washing using the ElbowGrease method!
+Intern_16 couldn't wash the vehicle...
+Intern_16 is washing using the ElbowGrease method!
+Intern_16 washed Mazda_8 from Clean to New
+Repairing....
+Mechanic_10 couldn't fix the Lifter_29
+Mechanic_8 couldn't fix the MountainBike_6
+Mechanic_8 couldn't fix the JeepRanger_6
+Mechanic_12 couldn't fix the MountainBike_8
+Mechanic_12 couldn't fix the Max-D_10
+Selling....
+8 buyers showed up today...
+Buyer_150 decided not to buy the Pusher_24
+Sales_13 just sold the TowTruck_33 for $24567.23 to Buyer_151
+Sales_13 got a bonus of $950
+Sales_5 just sold the Pusher_24 for $77640.05 to Buyer_152
+Sales_5 got a bonus of $750
+Sales_12 just sold the Armstrong_36 for $62015.32 to Buyer_154
+Sales_12 got a bonus of $750
+Sales_13 just sold the Rider_38 for $30507.51 to Buyer_155
+Sales_13 got a bonus of $500
+Sales_5 just sold the TowTruck_34 for $23726.24 to Buyer_156
+Sales_5 got a bonus of $950
+Closing:
+54 vehicles in inventory.
+43 sold vehicles.
+26 employees terminated.
+The top employee is Mechanic_8 has made $40370.00
+Ending budget: $1392235.16

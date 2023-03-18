@@ -1,0 +1,38 @@
+			*** North_FNDC Day 21 ***
+				  Sunday
+		--- Race Day ---
+CyberTruck_13
+Length:  3
+Driver16 just finished in 14 place with the Bigfoot_0
+Length:  3
+Driver17 just finished in 9 place with the Max-D_2
+Length:  3
+Driver2 just finished in 5 place with the Batman_3
+Mechanic_7 has quit the FNDC. They worked 16 day(s) and made $27776.00
+Closing:
+54 vehicles in inventory.
+29 sold vehicles.
+14 employees terminated.
+The top employee is Mechanic_7 has made $27776.00
+Ending budget: $2444814.43
+
+			*** South_FNDC Day 21 ***
+		--- Race Day ---
+Volt_10
+BMX_10
+TowTruck_9
+BMX_10
+CyberTruck_26
+MountainBike_6
+Shock_7
+Length:  2
+Driver18 just finished in 5 place with the Mazda_8
+Length:  2
+Driver19 just finished in 13 place with the Bugatti_9
+Intern_6 has quit the FNDC. They worked 19 day(s) and made $2048.00
+Closing:
+54 vehicles in inventory.
+29 sold vehicles.
+22 employees terminated.
+The top employee is Mechanic_8 has made $33604.00
+Ending budget: $2288303.38

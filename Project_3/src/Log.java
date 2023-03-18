@@ -8,7 +8,7 @@ public class Log {
 
     protected Log(String name, int d) {
         // Creating the file with the day
-        fileName = new File("Logger-" + d + "-.txt");
+        fileName = new File("Logger-" + d + ".txt");
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
             writer.write("\t\t\t*** " + name + " Day " + d + " ***");
         } catch (IOException ioe) {
@@ -43,7 +43,7 @@ public class Log {
     protected static void simulateResults() {
         ArrayList<String> files = new ArrayList<>();
         for(int i = 1;i < 32;i++) {
-            try(BufferedReader reader = new BufferedReader(new FileReader("Logger-"+i+"-.txt"))) {
+            try(BufferedReader reader = new BufferedReader(new FileReader("Logger-"+i+".txt"))) {
                 while(reader.ready()) {
                     files.add(reader.readLine());
                 }

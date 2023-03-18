@@ -1,0 +1,66 @@
+			*** North_FNDC Day 30 ***
+				  Tuesday
+Opening:
+Just hired a new Driver named Driver21
+Purchased New, Dirty  Climber_40 for $30873.84
+Washing....
+Intern_11 is washing using the ElbowGrease method!
+Intern_11 washed JeepRanger_2 from Clean to New
+Intern_8 is washing using the Chemical method!
+Climber_37 is already Sparkling!
+Intern_17 is washing using the Chemical method!
+Jeep_39 is already Sparkling!
+Intern_17 is washing using the Chemical method!
+Jeep_39 is already Sparkling!
+Repairing....
+Mechanic_0 couldn't fix the BMX_1
+Mechanic_0 just fixed Brutus_4 from Used to New
+Mechanic_0 just got a bonus of $2000
+Mechanic_13 couldn't fix the BMX_1
+Mechanic_14 just fixed Lifter_16 from Broken to Used
+Mechanic_14 just got a bonus of $1200
+Mechanic_14 couldn't fix the Shock_1
+Selling....
+0 buyers showed up today...
+Sales_11 has quit the FNDC. They worked 12 day(s) and made $4590.00
+Closing:
+54 vehicles in inventory.
+35 sold vehicles.
+21 employees terminated.
+The top employee is Mechanic_0 has made $43430.00
+Ending budget: $1829143.07
+
+			*** South_FNDC Day 30 ***
+Opening:
+Just hired a new Driver named Driver22
+Just hired a new Mechanic named Mechanic_15
+Purchased Broken, Clean  Rider_41 for $11393.70
+Washing....
+Intern_15 is washing using the ElbowGrease method!
+HotRod_6 is already Sparkling!
+Intern_15 is washing using the ElbowGrease method!
+HotRod_6 is already Sparkling!
+Intern_14 is washing using the Detailed method!
+HotRod_9 is already Sparkling!
+Intern_16 is washing using the ElbowGrease method!
+Intern_16 washed JeepRanger_11 from Clean to Used
+Intern_16 is washing using the ElbowGrease method!
+Intern_16 couldn't wash the vehicle...
+Repairing....
+Mechanic_10 couldn't fix the Mazda_8
+Mechanic_10 couldn't fix the Volt_6
+Mechanic_15 just fixed JeepRanger_11 from Used to New
+Mechanic_15 just got a bonus of $3000
+Mechanic_12 just fixed DirtBike_9 from Used to New
+Mechanic_12 just got a bonus of $3000
+Mechanic_12 couldn't fix the Jeep_11
+Selling....
+1 buyers showed up today...
+Buyer_161 decided not to buy the Rider_24
+Intern_14 has quit the FNDC. They worked 12 day(s) and made $1704.00
+Closing:
+54 vehicles in inventory.
+49 sold vehicles.
+28 employees terminated.
+The top employee is Mechanic_10 has made $34048.00
+Ending budget: $1178795.99

@@ -1,0 +1,67 @@
+			*** North_FNDC Day 25 ***
+				  Thursday
+Opening:
+Purchased Broken, Dirty  Climber_35 for $20434.36
+Washing....
+Intern_11 is washing using the ElbowGrease method!
+Intern_11 washed Rider_5 from Clean to Used
+Intern_11 is washing using the ElbowGrease method!
+Intern_11 couldn't wash the vehicle...
+Intern_8 is washing using the Chemical method!
+Intern_8 couldn't wash the vehicle...
+Intern_17 is washing using the Chemical method!
+Intern_17 couldn't wash the vehicle...
+Repairing....
+Mechanic_0 just fixed BMX_1 from Broken to Used
+Mechanic_0 just got a bonus of $100
+Mechanic_0 couldn't fix the Jeep_4
+Mechanic_13 couldn't fix the Batman_5
+Mechanic_2 just fixed Rider_20 from Used to New
+Mechanic_2 just got a bonus of $1000
+Selling....
+1 buyers showed up today...
+Buyer_127 decided not to buy the Rider_20
+Closing:
+54 vehicles in inventory.
+31 sold vehicles.
+16 employees terminated.
+The top employee is Mechanic_0 has made $37550.00
+Ending budget: $2284381.64
+
+			*** South_FNDC Day 25 ***
+Opening:
+Purchased Used, Sparkling  Corolla_35 for $10046.75
+Washing....
+Intern_15 is washing using the ElbowGrease method!
+Volt_10 just went from Clean to Dirty
+Intern_15 washed Volt_10 from Dirty to New
+Intern_15 is washing using the ElbowGrease method!
+The Volt_10 just became Like New!
+Intern_15 couldn't wash the vehicle...
+Intern_14 is washing using the Detailed method!
+CyberTruck_10 is already Sparkling!
+Intern_14 is washing using the Detailed method!
+CyberTruck_10 is already Sparkling!
+Intern_16 is washing using the ElbowGrease method!
+Intern_16 washed Shock_11 from Clean to New
+Repairing....
+Mechanic_10 just fixed Corolla_35 from Used to New
+Mechanic_10 just got a bonus of $1000
+Mechanic_8 just fixed Max-D_10 from Used to New
+Mechanic_8 just got a bonus of $2000
+Mechanic_8 couldn't fix the JeepRanger_6
+Mechanic_12 couldn't fix the Bigfoot_7
+Mechanic_12 couldn't fix the Shock_11
+Selling....
+3 buyers showed up today...
+Sales_12 just sold the Pusher_34 for $50516.67 to Buyer_128
+Sales_12 got a bonus of $750
+Buyer_129 decided not to buy the Corolla_35
+Buyer_130 decided not to buy the TowTruck_32
+Sales_8 has quit the FNDC. They worked 16 day(s) and made $6120.00
+Closing:
+54 vehicles in inventory.
+38 sold vehicles.
+25 employees terminated.
+The top employee is Mechanic_8 has made $37398.00
+Ending budget: $1862815.11

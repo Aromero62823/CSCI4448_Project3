@@ -1,0 +1,86 @@
+			*** North_FNDC Day 10 ***
+				  Wednesday
+Opening:
+Just hired a new Salesperson named Sales_7
+Purchased New, Sparkling  Mater_18 for $20465.26
+Purchased New, Sparkling  Ford_19 for $20667.53
+Washing....
+Intern_0 is washing using the Chemical method!
+Oh no! Jeep_4 just broke!
+Intern_0 just got a bonus of $500 for cleaning Jeep_4
+Intern_0 washed Jeep_4 from Sparkling to Broken
+Intern_8 is washing using the Chemical method!
+Mater_18 is already Sparkling!
+Intern_2 is washing using the Chemical method!
+Climber_4 just went from Clean to Dirty
+Oh no! Climber_4 just broke!
+Intern_2 washed Climber_4 from Dirty to Broken
+Repairing....
+Mechanic_0 couldn't fix the Zombie_1
+Mechanic_0 couldn't fix the Ford_19
+Mechanic_7 couldn't fix the 2Wheeler_2
+Mechanic_2 couldn't fix the Bolt_2
+Mechanic_2 couldn't fix the Armstrong_3
+		--- Race Day ---
+Length:  3
+Driver9 just finished in 12 place with the Climber_19
+Length:  3
+Driver1 just finished in 19 place with the Climber_2
+Climber_2 got damaged during the race!
+Length:  3
+Driver2 just finished in 3 place with the Armstrong_3
+Driver2 is a winner and got a bonus of $2000!
+Armstrong_3 increased in price!
+Selling....
+0 buyers showed up today...
+Intern_0 has quit the FNDC. They worked 10 day(s) and made $1420.00
+Sales_0 has quit the FNDC. They worked 10 day(s) and made $7300.00
+Closing:
+54 vehicles in inventory.
+15 sold vehicles.
+6 employees terminated.
+The top employee is Driver2 has made $16164.00
+Ending budget: $3630124.15
+
+			*** South_FNDC Day 10 ***
+Opening:
+Just hired a new Salesperson named Sales_8
+Purchased Used, Clean  Jeep_19 for $14791.96
+Purchased Used, Sparkling  Lifter_20 for $39267.18
+Washing....
+Intern_6 is washing using the ElbowGrease method!
+Intern_6 couldn't wash the vehicle...
+Intern_6 is washing using the ElbowGrease method!
+Intern_6 couldn't wash the vehicle...
+Intern_10 is washing using the Chemical method!
+Intern_10 washed HotRod_6 from Clean to New
+Intern_5 is washing using the Chemical method!
+Intern_5 couldn't wash the vehicle...
+Repairing....
+Mechanic_6 couldn't fix the MountainBike_6
+Mechanic_8 just fixed FordRunner_7 from Broken to Used
+Mechanic_8 just got a bonus of $3000
+Mechanic_9 couldn't fix the Jeep_9
+Mechanic_9 couldn't fix the MountainBike_6
+		--- Race Day ---
+Length:  3
+Driver7 just finished in 16 place with the Zombie_6
+Zombie_6 got damaged during the race!
+Driver7 got injured!
+Length:  3
+Driver4 just finished in 18 place with the Bigfoot_7
+Bigfoot_7 got damaged during the race!
+Length:  3
+Driver10 just finished in 10 place with the Cyborg_8
+Selling....
+4 buyers showed up today...
+Buyer_41 decided not to buy the Lifter_20
+Buyer_42 decided not to buy the Lifter_20
+Sales_5 just sold the Lifter_20 for $78534.37 to Buyer_43
+Sales_5 got a bonus of $750
+Closing:
+54 vehicles in inventory.
+10 sold vehicles.
+11 employees terminated.
+The top employee is Mechanic_6 has made $19874.00
+Ending budget: $4042612.66

@@ -1,0 +1,39 @@
+			*** North_FNDC Day 14 ***
+				  Sunday
+		--- Race Day ---
+CyberTruck_17
+Volt_3
+FordRunner_0
+Length:  3
+Driver9 just finished in 12 place with the JetCar_2
+Length:  3
+Driver1 just finished in 16 place with the JetCar_3
+JetCar_3 got damaged during the race!
+Driver1 got injured!
+Length:  3
+Driver2 just finished in 9 place with the Ferrari_4
+Closing:
+54 vehicles in inventory.
+17 sold vehicles.
+8 employees terminated.
+The top employee is Driver2 has made $16829.60
+Ending budget: $3357711.72
+
+			*** South_FNDC Day 14 ***
+		--- Race Day ---
+Length:  3
+Driver12 just finished in 16 place with the Lifter_18
+Lifter_18 got damaged during the race!
+Driver12 got injured!
+Length:  3
+Driver4 just finished in 4 place with the Lifter_8
+Length:  3
+Driver13 just finished in 15 place with the Runner_9
+Runner_9 got damaged during the race!
+Mechanic_9 has quit the FNDC. They worked 7 day(s) and made $6952.00
+Closing:
+54 vehicles in inventory.
+17 sold vehicles.
+15 employees terminated.
+The top employee is Mechanic_8 has made $25952.00
+Ending budget: $3281524.02
